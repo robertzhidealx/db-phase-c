@@ -1,0 +1,11 @@
+1296269,Hello-World,My first repository on GitHub!,https://api.github.com/repos/octocat/Hello-World,1721,1829,1829,859
+243950408,HowToCook,程序员在家做饭方法指南。Programmer's guide about how to cook at home (Chinese only).,https://api.github.com/repos/Anduin2017/HowToCook,5258,35887,35887,264
+74293321,svelte,Cybernetically enhanced web apps,https://api.github.com/repos/sveltejs/svelte,2819,57239,57239,720
+10270250,react,A declarative, efficient, and flexible JavaScript library for building user interfaces.,https://api.github.com/repos/facebook/react,38178,185920,185920,914
+24195339,angular,The modern web developer’s platform,https://api.github.com/repos/angular/angular,21236,80630,80630,1400
+11730342,vue,🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.,https://api.github.com/repos/vuejs/vue,31863,194746,194746,567
+70107786,next.js,The React Framework,https://api.github.com/repos/vercel/next.js,17762,84587,84587,1199
+71995937,nuxt.js,The Intuitive Vue(2) Framework,https://api.github.com/repos/nuxt/nuxt.js,3217,39767,39767,526
+311525798,Web-Dev-For-Beginners,24 Lessons, 12 Weeks, Get Started as a Web Developer,https://api.github.com/repos/microsoft/Web-Dev-For-Beginners,6583,45448,45448,4
+6498492,javascript,JavaScript Style Guide,https://api.github.com/repos/airbnb/javascript,23240,121787,121787,134
+304344049,kit,The fastest way to build Svelte apps,https://api.github.com/repos/sveltejs/kit,688,7749,7749,408

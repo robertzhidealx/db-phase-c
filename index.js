@@ -4,8 +4,8 @@ require("dotenv").config();
 const token = process.env.TOKEN;
 
 // organization();
-// commitStats();
 // repository();
+// downloads();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -27,7 +27,7 @@ async function organization() {
       `${id},${login},${name},${description},${email},${created_at},${updated_at},${location},${type}`
     );
   }
-  writeFile("organization.txt", db.join("\n"));
+  writeFile("files/organization.txt", db.join("\n"));
 }
 
 // Repository(repoID, name, description, url, forksCount, stargazersCount, watchersCount, openIssuesCount)
@@ -63,7 +63,7 @@ async function repository() {
       `${id},${name},${description},${url},${forks_count},${stargazers_count},${watchers_count},${open_issues_count}`
     );
   }
-  writeFile("repository.txt", db.join("\n"));
+  writeFile("files/repository.txt", db.join("\n"));
 }
 
 //User(userID, login, url, type)
@@ -82,17 +82,30 @@ async function commit() {}
 async function commitStats() {}
 
 // Downloads(packageName, startDate, endDate, downloadsCount)
-async function downloads() {}
+async function downloads() {
+  const pkgs = ["react", "angular", "vue", "svelte", "next", "nuxt"];
+  const db = [];
+  for (const pkg of pkgs) {
+    const { package, start, end, downloads } = await get(
+      `https://api.npmjs.org/downloads/point/2020-07-01:2022-01-01/${pkg}`,
+      false
+    );
+    db.push(`${package},${start},${end},${downloads}`);
+  }
+  writeFile("files/downloads.txt", db.join("\n"));
+}
 
 // DownloadsOnDate(packageName, day, downloads)
 async function downloadsOnDate() {}
 
-function get(url) {
+function get(url, withAuth = true) {
   const options = {
     method: "GET",
-    headers: {
-      Authorization: `token ${token}`,
-    },
+    headers: withAuth
+      ? {
+          Authorization: `token ${token}`,
+        }
+      : {},
   };
   return fetch(url, options).then((res) => res.json());
 }

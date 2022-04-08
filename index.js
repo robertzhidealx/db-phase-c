@@ -2,7 +2,8 @@ const fs = require('fs');
 require('dotenv').config();
 
 const token = process.env.TOKEN;
-console.log(token);
+
+// organization();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {

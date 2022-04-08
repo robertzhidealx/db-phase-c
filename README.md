@@ -18,4 +18,4 @@ npm install -g nodemon
 
 First install NPM packages with `npm install`.
 
-Then use the command `npm run start` to start.
+Then use the command `npm run start` to start monitoring, or use `npm run limited` to run once.

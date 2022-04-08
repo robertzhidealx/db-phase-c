@@ -16,4 +16,6 @@ npm install -g nodemon
 
 ## Run
 
-Use the command `npm run start` to start.
+First install NPM packages with `npm install`.
+
+Then use the command `npm run start` to start.

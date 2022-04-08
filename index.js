@@ -4,6 +4,7 @@ require("dotenv").config();
 const token = process.env.TOKEN;
 
 // organization();
+commitStats();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -25,7 +26,7 @@ async function organization() {
       `${id},${login},${name},${description},${email},${created_at},${updated_at},${location},${type}`
     );
   }
-  writeFile("organization.txt", db.join("\n"));
+  writeFile("/files/organization.txt", db.join("\n"));
 }
 
 // Repository(repoID, name, description, url, forksCount, stargazersCount, watchersCount, openIssuesCount)
@@ -37,14 +38,14 @@ async function user() {}
 // Package (packageName, stars, version, latestUpdated, latestCreated, size, packageHtmlUrl)
 async function package() {}
 
+// Issue(issueID, repoID, title, body, state)
+async function issue() {}
+
 // Commit(commitID, repoID, author, committer, message, commentCount, isVerified)
 async function commit() {}
 
 // CommitStats(commitID, additions, deletions, total)
 async function commitStats() {}
-
-// Issue(issueID, repoID, title, body, state)
-async function issue() {}
 
 // Downloads(packageName, startDate, endDate, downloadsCount)
 async function downloads() {}

@@ -1,9 +1,379 @@
-hello-world,0.0.2,2,0.044960028187118216
-svelte,3.46.6,8,0.7977865825538941
-react,18.0.0,779,0.9215216662725942
-angular,1.8.2,236,0.7050414648943147
-vue,3.2.31,252,0.8652168892901562
-next.js,1.0.3,1,0.14524278244785552
-nuxt.js,0.0.1,0,0.544574745265177
-javascript,1.0.0,1,0.017431406659975952
-kit,0.1.2,0,0.36571585422744374
+1196788182,https://api.github.com/repos/octocat/Hello-World,Commit for a homework,open
+1194307251,https://api.github.com/repos/octocat/Hello-World,Edited README,open
+1193410529,https://api.github.com/repos/octocat/Hello-World,title,open
+1192908991,https://api.github.com/repos/octocat/Hello-World,title,open
+1192652434,https://api.github.com/repos/octocat/Hello-World,Check This out,open
+1186971628,https://api.github.com/repos/octocat/Hello-World,issue2,open
+1186371287,https://api.github.com/repos/octocat/Hello-World,Hello World,open
+1185341139,https://api.github.com/repos/octocat/Hello-World,Hello, world!,open
+1185330324,https://api.github.com/repos/octocat/Hello-World,Hello, world!,open
+1184253197,https://api.github.com/repos/octocat/Hello-World,test,open
+1183647907,https://api.github.com/repos/octocat/Hello-World,Joseph Andrew Watkins ,open
+1183478731,https://api.github.com/repos/octocat/Hello-World,test2,open
+1180371203,https://api.github.com/repos/octocat/Hello-World,Check This out,open
+1178901743,https://api.github.com/repos/octocat/Hello-World,Delete README,open
+1177063540,https://api.github.com/repos/octocat/Hello-World,COmmit,open
+1174544887,https://api.github.com/repos/octocat/Hello-World,title,open
+1173777244,https://api.github.com/repos/octocat/Hello-World,Hello world from wttj-qa-bot,open
+1173776268,https://api.github.com/repos/octocat/Hello-World,Hello world from wttj-qa-bot,open
+1172973574,https://api.github.com/repos/octocat/Hello-World,Hello, world!,open
+1169837309,https://api.github.com/repos/octocat/Hello-World,saying Hello from -MSC,open
+1169835879,https://api.github.com/repos/octocat/Hello-World,saying Hello from -DF,open
+1169834454,https://api.github.com/repos/octocat/Hello-World,hello,open
+1169834396,https://api.github.com/repos/octocat/Hello-World,add hello world from -DP,open
+1169834328,https://api.github.com/repos/octocat/Hello-World,saying Hello from -AS,open
+1169834318,https://api.github.com/repos/octocat/Hello-World,Added Hello world,open
+1169834243,https://api.github.com/repos/octocat/Hello-World,saying Hello from -TM,open
+1169162442,https://api.github.com/repos/octocat/Hello-World,How do I get the codes?,open
+1168443967,https://api.github.com/repos/octocat/Hello-World,Demo1,open
+1167259329,https://api.github.com/repos/octocat/Hello-World,myhelloworld,open
+1166625536,https://api.github.com/repos/octocat/Hello-World,Test Issue,open
+1198721651,https://api.github.com/repos/sveltejs/svelte,[docs] add `<svelte:element>` example,open
+1197753714,https://api.github.com/repos/sveltejs/svelte,Feature Suggestion: Improve versatility of `<svelte:component>` and `<svelte:element>` by treating them as a `<svelte:fragment>` when the `this` prop value is present but is a falsy or nullish value,open
+1197602667,https://api.github.com/repos/sveltejs/svelte,[fix] each animate allow having comment siblings,open
+1197590576,https://api.github.com/repos/sveltejs/svelte,[fix] const declared without let: binding get ignored,open
+1196770769,https://api.github.com/repos/sveltejs/svelte,[feat] Make setContext return the value that was passed in,open
+1196299506,https://api.github.com/repos/sveltejs/svelte,A component wrapping a custom element is not rendered into a slot correctly,open
+1196215304,https://api.github.com/repos/sveltejs/svelte,Make setContext return the value that was just set.,open
+1196040822,https://api.github.com/repos/sveltejs/svelte,[feat] claim static html elements using innerHTML instead of deopt to claiming every nodes,open
+1195792831,https://api.github.com/repos/sveltejs/svelte,Allow `#each` block to handle arbitrary non array like iterables,open
+1195355843,https://api.github.com/repos/sveltejs/svelte,Bind to text nodes,open
+1193218074,https://api.github.com/repos/sveltejs/svelte,chore: execute `npm audit fix`,open
+1190298532,https://api.github.com/repos/sveltejs/svelte,Hydration Attributes,open
+1187743467,https://api.github.com/repos/sveltejs/svelte,Unexpected behavior using spread attributes.,open
+1186904695,https://api.github.com/repos/sveltejs/svelte,Selector Lists Break `:global` When Attributes Are Targeted (`3.46.5`),open
+1185636300,https://api.github.com/repos/sveltejs/svelte,Media element's `buffered` binding doesn't update frequently enough to match native `TimeRange` object,open
+1185380767,https://api.github.com/repos/sveltejs/svelte,Access target/anchor properties from within component,open
+1184198585,https://api.github.com/repos/sveltejs/svelte,[fix] Max call stack exceeded when large number of components are flushed ,open
+1180787187,https://api.github.com/repos/sveltejs/svelte,select_change_handler fails with exposed slot property,open
+1175275195,https://api.github.com/repos/sveltejs/svelte,camelCased variable names are not reactive.,open
+1174995296,https://api.github.com/repos/sveltejs/svelte,Custom Elements Hydrated Incorrectly,open
+1174626893,https://api.github.com/repos/sveltejs/svelte,Feature Request: Template guard clauses,open
+1174135626,https://api.github.com/repos/sveltejs/svelte,[docs] add component comments,open
+1169185920,https://api.github.com/repos/sveltejs/svelte,One unit test fails with pnpm, works with npm,open
+1168249945,https://api.github.com/repos/sveltejs/svelte,bind:this in each block not working with Array.splice,open
+1167536041,https://api.github.com/repos/sveltejs/svelte,CSS "!important" not supported in Svelte "style",open
+1167428689,https://api.github.com/repos/sveltejs/svelte,[fix] 1.@html in template set inner html, 2. with sibling error closes [#7315, #7319],open
+1167323233,https://api.github.com/repos/sveltejs/svelte,{#each} with immutable values,open
+1167166428,https://api.github.com/repos/sveltejs/svelte,Discrepancy of `<select value>` from `<option selected>`,open
+1165818005,https://api.github.com/repos/sveltejs/svelte,[fix] Export types needed for defining custom stores,open
+1164769953,https://api.github.com/repos/sveltejs/svelte,[docs] Fix statement about the order of bind: and on:,open
+1198723242,https://api.github.com/repos/facebook/react,Bug: onaginani,open
+1198718873,https://api.github.com/repos/facebook/react,Replace zero with `NoLanes` for consistency in `FiberLane`,open
+1197956718,https://api.github.com/repos/facebook/react,Use FB specific stream config for native-relay,open
+1197355166,https://api.github.com/repos/facebook/react,[Flight] Add a better error message for undefined server components,open
+1196863791,https://api.github.com/repos/facebook/react,Support for selectionchange event for HTML input element and HTML textarea element,open
+1196775289,https://api.github.com/repos/facebook/react,WIP: Improve console dimming on second StrictMode render,open
+1196695161,https://api.github.com/repos/facebook/react,Bug: React 18 types broken since the type release a view hours ago,open
+1196555809,https://api.github.com/repos/facebook/react,Console dimming on second StrictMode render forces string cast,open
+1196546808,https://api.github.com/repos/facebook/react,Update Yarn to version Berry,open
+1195518541,https://api.github.com/repos/facebook/react,[Fizz] Pipeable Stream Perf,open
+1195358265,https://api.github.com/repos/facebook/react,Point useSubscription to useSyncExternalStore shim,open
+1195352228,https://api.github.com/repos/facebook/react,Delete the create-subscription package,open
+1194172364,https://api.github.com/repos/facebook/react,Suppress "Download the React DevTools" log for a better development experience,open
+1193561958,https://api.github.com/repos/facebook/react,Don't clean up twice in hidden trees,open
+1193442452,https://api.github.com/repos/facebook/react,Failing test: componentWillUnmount called twice,open
+1193223783,https://api.github.com/repos/facebook/react,Bug: componentWillUnmount is called twice,open
+1190958741,https://api.github.com/repos/facebook/react,Bug: [eslint-plugin-exhaustive-deps] can't find unstable value.,open
+1190951365,https://api.github.com/repos/facebook/react,fix: add additional primitive value,open
+1190820736,https://api.github.com/repos/facebook/react,Bug: React 18 adds empty HTML comment tags in SSR markup,open
+1190377947,https://api.github.com/repos/facebook/react,fix suspense fallback throttling,open
+1190214678,https://api.github.com/repos/facebook/react,[WIP] Diffs for hydration errors,open
+1190159527,https://api.github.com/repos/facebook/react,[React DevTools] Improve DevTools UI when Inspecting a user Component that Throws an Error ,open
+1190113914,https://api.github.com/repos/facebook/react,Fix infinite update loop that happens when an unmemoized value is passed to useDeferredValue,open
+1190053717,https://api.github.com/repos/facebook/react,ESLint - use React type definitions / hooks without `React` namespace,open
+1189115411,https://api.github.com/repos/facebook/react,suggestion: Suspense support delay,open
+1188107507,https://api.github.com/repos/facebook/react,Server-side rendering performance degradation with renderToPipeableStream,open
+1186770178,https://api.github.com/repos/facebook/react,Improve DevTools protocol version handling,open
+1186607524,https://api.github.com/repos/facebook/react,NPM "version" export format changed (now includes SHA and date),open
+1185437533,https://api.github.com/repos/facebook/react,[Fizz] Send errors down to client,open
+1184239460,https://api.github.com/repos/facebook/react,Bug: Elements in a list incorrectly receive hover state when a sibling is removed as result of a touch event,open
+1198737140,https://api.github.com/repos/angular/angular,Duplicated code in Change_detection_util.ts  ,open
+1198717842,https://api.github.com/repos/angular/angular,Calling ChangeDetectorRef.detectChanges in child view causes error in parent NgForOf directive,open
+1198716197,https://api.github.com/repos/angular/angular,docs: add powershell execution policies note,open
+1198634785,https://api.github.com/repos/angular/angular,fix(compiler): avoid errors with extremely long instruction chains,open
+1198615139,https://api.github.com/repos/angular/angular,docs: Fix several typos in the angular documentation,open
+1198605454,https://api.github.com/repos/angular/angular,Change Detection keeps running when the application listens to  "message" event when DevTools is loaded,open
+1198553811,https://api.github.com/repos/angular/angular,feat(animations): make validateStyleProperty check dev-mode only,open
+1198462777,https://api.github.com/repos/angular/angular,build: fix typo in package.json file comment ,open
+1198288240,https://api.github.com/repos/angular/angular,build: update dependency google-closure-compiler to v20220405,open
+1197769105,https://api.github.com/repos/angular/angular,docs: improve markdown,open
+1197182504,https://api.github.com/repos/angular/angular,Maximum call stack size exceeded with large SVG,open
+1196848368,https://api.github.com/repos/angular/angular,build: update dependency eslint-plugin-jsdoc to v39,open
+1196844907,https://api.github.com/repos/angular/angular,build: update dependency rules_pkg to v0.7.0,open
+1196675662,https://api.github.com/repos/angular/angular,docs: New Using Pipes in templates doc,open
+1196368645,https://api.github.com/repos/angular/angular,add expects to expectOne and expectNone,open
+1195978689,https://api.github.com/repos/angular/angular,build: update to jasmine 4.0,open
+1195872541,https://api.github.com/repos/angular/angular,control.hasError() return unexpected value,open
+1195328836,https://api.github.com/repos/angular/angular,New binding overview doc,open
+1194999754,https://api.github.com/repos/angular/angular,fix(zone.js): patch node for nested fs functions,open
+1194645243,https://api.github.com/repos/angular/angular,zone.js/node breaks for fs.realpath.native and fs.realpathSync.native,open
+1194479137,https://api.github.com/repos/angular/angular,Expose `flushPeriodic` from FakeAsync module,open
+1194455089,https://api.github.com/repos/angular/angular,Cannot use APP_BASE_HREF alongside @angular/localize,open
+1194419683,https://api.github.com/repos/angular/angular,Fix : code style for product-details & cart components,open
+1194396895,https://api.github.com/repos/angular/angular,build: update github/codeql-action action to v2.1.8,open
+1194339791,https://api.github.com/repos/angular/angular,Angular.io website is not GDPR compliant,open
+1194052976,https://api.github.com/repos/angular/angular,docs(forms): fix incorrect punctuation,open
+1194048775,https://api.github.com/repos/angular/angular,wrong punctuation in angular doc,open
+1193848682,https://api.github.com/repos/angular/angular,Text interpolation update,open
+1193757115,https://api.github.com/repos/angular/angular,Delete SVG in templates doc,open
+1193750991,https://api.github.com/repos/angular/angular,Delete Template statements doc,open
+1188208649,https://api.github.com/repos/vuejs/vue,fix Module Federation & Vue 2 SSR: support async initialization #12511,open
+1187844300,https://api.github.com/repos/vuejs/vue,Module Federation & Vue 2 SSR: support async initialization,open
+1178389839,https://api.github.com/repos/vuejs/vue,Allow inferring types from Vue.set(object, ...) pattern,open
+1172301287,https://api.github.com/repos/vuejs/vue,chore: Improve npm package specification,open
+1162435226,https://api.github.com/repos/vuejs/vue,The latest progress of Vue 2.7 and the REAL approximate release time,open
+1161789738,https://api.github.com/repos/vuejs/vue,types(compiler): add missing start/end fields,open
+1156357011,https://api.github.com/repos/vuejs/vue,build(deps-dev): bump karma from 3.1.4 to 6.3.16,open
+1155662580,https://api.github.com/repos/vuejs/vue,serverPrefetch's `this` type doesn't include component properties,open
+1155278208,https://api.github.com/repos/vuejs/vue,chore: fix typos [skip ci],open
+1154767703,https://api.github.com/repos/vuejs/vue,fix(compiler):  codeframe infinite loop,open
+1150043411,https://api.github.com/repos/vuejs/vue,fix(compiler): add missing code range on warn,open
+1147231999,https://api.github.com/repos/vuejs/vue,build(deps): bump trim-off-newlines from 1.0.1 to 1.0.3,open
+1145021945,https://api.github.com/repos/vuejs/vue,fix keep-alive pruneCache not work in some max values,open
+1141522120,https://api.github.com/repos/vuejs/vue,use vite with vue2 on ssr,  dynamic import cause Cannot add property _Ctor, object is not extensible,open
+1133959473,https://api.github.com/repos/vuejs/vue,build(deps): bump follow-redirects from 1.14.7 to 1.14.8,open
+1129544390,https://api.github.com/repos/vuejs/vue,chore: fix license link,open
+1128092953,https://api.github.com/repos/vuejs/vue,HMR is not working,open
+1122669159,https://api.github.com/repos/vuejs/vue,fix(core): add prop name to invalid prop type warning message (fix #12454),open
+1121557049,https://api.github.com/repos/vuejs/vue,Property validator should report the property that failed type / validator check,open
+1111605222,https://api.github.com/repos/vuejs/vue,fix(ssr): fix compatibility with webpack@4 and webpack@5 for monorepos,open
+1108113706,https://api.github.com/repos/vuejs/vue,`this` type inference doesnt work in `data` method,open
+1108070765,https://api.github.com/repos/vuejs/vue,Vue SSR did not inject the extracted CSS file,open
+1104378447,https://api.github.com/repos/vuejs/vue,build(deps-dev): bump shelljs from 0.8.3 to 0.8.5,open
+1104175580,https://api.github.com/repos/vuejs/vue,docs(readme & backers): HTTP => HTTPS,open
+1099968402,https://api.github.com/repos/vuejs/vue,refactor(observer): avoid eager new Dep(),open
+1097083572,https://api.github.com/repos/vuejs/vue,Chore: fixed punctuation errors,open
+1090055682,https://api.github.com/repos/vuejs/vue,ci: Update CircleCI pipeline to run Codecov,open
+1084482504,https://api.github.com/repos/vuejs/vue,feat(types): add types for hook events,open
+1071501898,https://api.github.com/repos/vuejs/vue,fix #12374: do not hyphenate or omit CSS variables in style attribute,open
+1070694315,https://api.github.com/repos/vuejs/vue,vue-server-renderer: CSS variables get lost in dynamic style attributes,open
+1198721945,https://api.github.com/repos/vercel/next.js,[examples] Update styled-components to use Babel and Typescript,open
+1198616922,https://api.github.com/repos/vercel/next.js,webpack config function in next.config.js   run three tim,open
+1198543619,https://api.github.com/repos/vercel/next.js,Image Optimization loads also original image,open
+1198295029,https://api.github.com/repos/vercel/next.js,URGENT: Serverless runtimes corrupted on some regions,open
+1198002744,https://api.github.com/repos/vercel/next.js,When using getLayout, the Layout component can't access parent Contexts provided in _app,open
+1197974767,https://api.github.com/repos/vercel/next.js,Fix outputStandalone with optimizeCss,open
+1197956097,https://api.github.com/repos/vercel/next.js,[Experimental] strategy="worker" not loading js file ,open
+1197808426,https://api.github.com/repos/vercel/next.js,`outputStandalone` does not work with `yarn workspaces`,open
+1197743722,https://api.github.com/repos/vercel/next.js,next/script component not working with Google Analytics ,open
+1197710550,https://api.github.com/repos/vercel/next.js,Add note to contributing about docs manifest,open
+1197700753,https://api.github.com/repos/vercel/next.js,[ vercel ] deployment failure  - Type 'Component<{}, any, any>' is not assignable to type 'Element | ElementClass | null' in _app.tsx,open
+1197626960,https://api.github.com/repos/vercel/next.js,Loosen the "public" condition on getSSP,open
+1197396536,https://api.github.com/repos/vercel/next.js,Moving middleware file ,open
+1197384579,https://api.github.com/repos/vercel/next.js,Custom _document file example for styled-components throws a TS bug after updating @types/react to ^18.0.0,open
+1197300790,https://api.github.com/repos/vercel/next.js,React 18 server components does not work with package from node_modules,open
+1197243386,https://api.github.com/repos/vercel/next.js,create-next-app suddenly stopped working,open
+1197100713,https://api.github.com/repos/vercel/next.js,feat(next-swc): Update swc crates,open
+1197083556,https://api.github.com/repos/vercel/next.js,Do not add locale to link for api route and middleware preflight,open
+1197024864,https://api.github.com/repos/vercel/next.js,Link to api route does not work when dynamic route exists on production,open
+1197010634,https://api.github.com/repos/vercel/next.js,Update to with-supertokens example,open
+1196992812,https://api.github.com/repos/vercel/next.js,Next.js router.isReady never set to true on custom 404 page,open
+1196976959,https://api.github.com/repos/vercel/next.js,SWC + styled-components: element classes & style classes are not synched,open
+1196909389,https://api.github.com/repos/vercel/next.js,Image Optimizer - upstream max-age regression,open
+1196898518,https://api.github.com/repos/vercel/next.js,issue with import dynamic ,open
+1196809407,https://api.github.com/repos/vercel/next.js,Ordering of request query being changed in production,open
+1196760568,https://api.github.com/repos/vercel/next.js,examples: add Hasura,open
+1196516049,https://api.github.com/repos/vercel/next.js,Support Postcss plugin - postcss-each v1.1.0,open
+1196431155,https://api.github.com/repos/vercel/next.js,Version pinning in eslint-config-next causes difficulties in supporting multiple configs,open
+1196327294,https://api.github.com/repos/vercel/next.js,refactor(build): no force transpile optional chaining,open
+1196324767,https://api.github.com/repos/vercel/next.js,Export RouterContext,open
+1196968401,https://api.github.com/repos/nuxt/nuxt.js,nuxt.js generate Bug,open
+1193385286,https://api.github.com/repos/nuxt/nuxt.js,publicRuntimeConfig variables on client side always equals undefined,open
+1192872223,https://api.github.com/repos/nuxt/nuxt.js,Opt-out for payload.js generation on static websites,open
+1192106925,https://api.github.com/repos/nuxt/nuxt.js,Can't update layout content after component created at server side,open
+1190625370,https://api.github.com/repos/nuxt/nuxt.js,Two different routes having same route names causes conflict in router,open
+1189498108,https://api.github.com/repos/nuxt/nuxt.js,Dynamic loaded Async component event listener not work on SSR first rendered,open
+1182556405,https://api.github.com/repos/nuxt/nuxt.js,whether nuxt.js support different domain names to jump directly to different routes ,open
+1181825143,https://api.github.com/repos/nuxt/nuxt.js,chore(deps): update actions/checkout action to v3,open
+1181825109,https://api.github.com/repos/nuxt/nuxt.js,chore(deps): update actions/cache action to v3,open
+1181596512,https://api.github.com/repos/nuxt/nuxt.js,use Storage(like localStorage) have problem in test environment,open
+1178853015,https://api.github.com/repos/nuxt/nuxt.js,No error raised when non-existing layout is set,open
+1175247060,https://api.github.com/repos/nuxt/nuxt.js,Vuetify root stylesheet import error,open
+1174540766,https://api.github.com/repos/nuxt/nuxt.js,Cannot read properties of undefined (reading 'stubModule'),open
+1174341166,https://api.github.com/repos/nuxt/nuxt.js,Head Scripts not being cleared between pages,open
+1174309387,https://api.github.com/repos/nuxt/nuxt.js,fix: allow files with .cjs extension to be transpiled,open
+1174258001,https://api.github.com/repos/nuxt/nuxt.js,Javascript files with .cjs extension can not be transpiled,open
+1172523431,https://api.github.com/repos/nuxt/nuxt.js,This dependency was not found - Module with subpaths in exports,open
+1170965975,https://api.github.com/repos/nuxt/nuxt.js,Optional parameter route generated when page is kebab-case,open
+1170863960,https://api.github.com/repos/nuxt/nuxt.js,v-html not working on dynamic tag ,open
+1165436059,https://api.github.com/repos/nuxt/nuxt.js,Server middleware called twice,open
+1164901395,https://api.github.com/repos/nuxt/nuxt.js,nuxt build found render link tag insert repeat,open
+1164413703,https://api.github.com/repos/nuxt/nuxt.js,CSS modules doesn't work with scss.,open
+1162734236,https://api.github.com/repos/nuxt/nuxt.js,Dynamic OG/meta tags do not work anymore,open
+1161730498,https://api.github.com/repos/nuxt/nuxt.js,Question: Static non-exists page issue?,open
+1157780141,https://api.github.com/repos/nuxt/nuxt.js,Make `$loading` accessible in VueX store,open
+1157433070,https://api.github.com/repos/nuxt/nuxt.js,Vue packages version mismatch,open
+1157237269,https://api.github.com/repos/nuxt/nuxt.js,Nuxt doesn't minify html entirely,open
+1152606755,https://api.github.com/repos/nuxt/nuxt.js,Redirect fails for middleware.,open
+1151824744,https://api.github.com/repos/nuxt/nuxt.js,Layout options,open
+1150165492,https://api.github.com/repos/nuxt/nuxt.js,bufferutil and utf-8-validate warning error on build command when standalone is true,open
+1140542735,https://api.github.com/repos/microsoft/Web-Dev-For-Beginners,[TRANSLATIONS] - Igbo,open
+1120981933,https://api.github.com/repos/microsoft/Web-Dev-For-Beginners,Add readme.es in 1-getting started-lessons/traslations,open
+1086745416,https://api.github.com/repos/microsoft/Web-Dev-For-Beginners,[TRANSLATIONS] - Indonesian  ID,open
+1038912457,https://api.github.com/repos/microsoft/Web-Dev-For-Beginners,[TRANSLATIONS] - Russian ,open
+1161148041,https://api.github.com/repos/airbnb/javascript,[eslint config] [imports] fix imports.js remove node_modules from imp…,open
+1150201404,https://api.github.com/repos/airbnb/javascript,How to report such errors about "prefer-regex-literals" and how to solve them,open
+1106058475,https://api.github.com/repos/airbnb/javascript,Issue with eslint-config-airbnb-base and `optional chaining` operator,open
+1097783515,https://api.github.com/repos/airbnb/javascript,[eslint-config] turn on no-direct-mutation-state,open
+1093040409,https://api.github.com/repos/airbnb/javascript,Add Class Private Identifier,open
+1090159749,https://api.github.com/repos/airbnb/javascript,airbnb-base/legacy config incompatible with ES5,open
+1056980427,https://api.github.com/repos/airbnb/javascript,[readme] update blocks 16.1,open
+1050367374,https://api.github.com/repos/airbnb/javascript,[no-restricted-exports] Fails on `export { default } from ...`,open
+1045920049,https://api.github.com/repos/airbnb/javascript,Remove outdated "Other Styles" entry,open
+1032995311,https://api.github.com/repos/airbnb/javascript,Ignore property modifications on params named "state",open
+991877920,https://api.github.com/repos/airbnb/javascript,fix: added newline,open
+991589574,https://api.github.com/repos/airbnb/javascript,fix: add new line after list,open
+983289003,https://api.github.com/repos/airbnb/javascript,Section 3.5 (sorting shorthand properties first) can impair readability,open
+983117557,https://api.github.com/repos/airbnb/javascript,remove node_modules from import/ignore,open
+975878616,https://api.github.com/repos/airbnb/javascript,Why is eslint-plugin-import configured to ignore node_modules?,open
+944909351,https://api.github.com/repos/airbnb/javascript,Change "Enforce" to "Avoid" for 19.16,open
+941521192,https://api.github.com/repos/airbnb/javascript,Update react/README.md,open
+935788280,https://api.github.com/repos/airbnb/javascript,Added period to 4.4 for formatting consistency.,open
+909521767,https://api.github.com/repos/airbnb/javascript,Question: do you enforce multiline new lines for destructuring?,open
+909361195,https://api.github.com/repos/airbnb/javascript,Update imports.js,open
+903024013,https://api.github.com/repos/airbnb/javascript,[readme] Fix inconsistency,open
+899605922,https://api.github.com/repos/airbnb/javascript,Update README.md,open
+894157840,https://api.github.com/repos/airbnb/javascript,no-restricted-syntax for...of warning potentially confusing,open
+875813861,https://api.github.com/repos/airbnb/javascript,Remove Math.pow from `no-restricted-properties` and use `prefer-exponentiation-operator` instead.,open
+809956169,https://api.github.com/repos/airbnb/javascript,Update ARIA roles link,open
+757399842,https://api.github.com/repos/airbnb/javascript,chore: enable not breaking changes features,open
+746658323,https://api.github.com/repos/airbnb/javascript,Import Declaration Newline Rules Confusing/Not Documented Correctly,open
+741405770,https://api.github.com/repos/airbnb/javascript,Should 'react/react-in-jsx-scope' be disabled by default if the new JSX transform is used.,open
+714358269,https://api.github.com/repos/airbnb/javascript,JSX is not displayed correctly in webpage,open
+685682228,https://api.github.com/repos/airbnb/javascript,📝 [REPO]: Added CONTRIBUTING.md with contribution guidelines to the r…,open
+1198272580,https://api.github.com/repos/sveltejs/kit,Support named layouts for the error page, e.g., __error@root.svelte, to remove hardwired dependency on __layout.svelte,open
+1198030494,https://api.github.com/repos/sveltejs/kit,Navigation - The NEXT button in the SvelteKit documentation malfunctions,open
+1197966802,https://api.github.com/repos/sveltejs/kit,Static route configs,open
+1197903708,https://api.github.com/repos/sveltejs/kit,Update and modernize `adapter-cloudflare-workers`,open
+1196683171,https://api.github.com/repos/sveltejs/kit,SCSS class renaming does not work for nested classes,open
+1196570831,https://api.github.com/repos/sveltejs/kit,docs(endpoint): adding example regarding parsing url params,open
+1196510947,https://api.github.com/repos/sveltejs/kit,The `base` from `$app/paths` doesn't contain a slash,open
+1196465688,https://api.github.com/repos/sveltejs/kit,Sourcemap error in packages created with sveltekit,open
+1195462013,https://api.github.com/repos/sveltejs/kit,Page store does not changing on history back,open
+1195456554,https://api.github.com/repos/sveltejs/kit,[pkg:create-svelte] Bump `eslint` from version 7 to 8,open
+1195225877,https://api.github.com/repos/sveltejs/kit,Replace `maxage` in `load` with more detailed `cache` option,open
+1195030792,https://api.github.com/repos/sveltejs/kit,skip client-side nav for <a sveltekit:reload>,open
+1194790363,https://api.github.com/repos/sveltejs/kit,Deprioritise migration guide,open
+1194577771,https://api.github.com/repos/sveltejs/kit,Add more flexibility to invalidate,open
+1194046418,https://api.github.com/repos/sveltejs/kit,Woocommerce plugin import error,open
+1193900584,https://api.github.com/repos/sveltejs/kit,[feat] custom load dependencies,open
+1193509174,https://api.github.com/repos/sveltejs/kit,[Demo App] type check exception handling on form action,open
+1193377258,https://api.github.com/repos/sveltejs/kit,Setting paths.base in svelte.config.js causes adapter-static to fail (404),open
+1193123738,https://api.github.com/repos/sveltejs/kit,Page sends "accept: '*/*'" to page endpoint, but really only accepts 'application/json',open
+1192458257,https://api.github.com/repos/sveltejs/kit,[chore] clean up playwright-chromium root dependency,open
+1192430691,https://api.github.com/repos/sveltejs/kit,opt into `strict: true` in `tsconfig.json` by default,open
+1192422278,https://api.github.com/repos/sveltejs/kit,feat: Merge ErrorLoad and Load, make Input and Output typings public,open
+1192358034,https://api.github.com/repos/sveltejs/kit,Error when using `Vite`'s native WebAssebmly imports,open
+1192144132,https://api.github.com/repos/sveltejs/kit,Hydration bug with browser extensions,open
+1191427667,https://api.github.com/repos/sveltejs/kit,Cannot use import statement outside a module,open
+1191011516,https://api.github.com/repos/sveltejs/kit,Cannot use custom element correctly with sveltekit,open
+1190922002,https://api.github.com/repos/sveltejs/kit,Populate matcher function with inherited slugs,open
+1190697271,https://api.github.com/repos/sveltejs/kit,routing docs should say what to put in the html to link to another page,open
+1190636747,https://api.github.com/repos/sveltejs/kit,Automatically populate `compilerOptions.paths` in the generated `.svelte-kit/tsconfig.json` file based on `svelte.config.js`,open
+1190615436,https://api.github.com/repos/sveltejs/kit,[Fix] Disable type checking for non-typescript projects by default,open
+1198455875,https://api.github.com/repos/lit/lit,The following properties on element ... will not trigger updates as expected because they are set using class fields,open
+1194999257,https://api.github.com/repos/lit/lit,[localize] Changing contents of expression should not cause validation error,open
+1194930436,https://api.github.com/repos/lit/lit,[meta] Release PR CLA fails,open
+1194837523,https://api.github.com/repos/lit/lit,Bump follow-redirects from 1.14.3 to 1.14.9,open
+1194835121,https://api.github.com/repos/lit/lit,Bump minimist from 1.2.5 to 1.2.6 in /packages/labs/eleventy-plugin-lit,open
+1194835014,https://api.github.com/repos/lit/lit,Bump minimist from 1.2.5 to 1.2.6 in /packages/tests,open
+1194834917,https://api.github.com/repos/lit/lit,Bump minimist from 1.2.5 to 1.2.6 in /packages/benchmarks/generator,open
+1192768275,https://api.github.com/repos/lit/lit,New Decorator: `@queryAllAsync`,open
+1190511977,https://api.github.com/repos/lit/lit,[@tests] Run Tests On Windows,open
+1190328705,https://api.github.com/repos/lit/lit,Separate local and saucelabs tests,open
+1189682505,https://api.github.com/repos/lit/lit,[@lit-labs/router] Use new version of URLPattern polyfill,open
+1189637407,https://api.github.com/repos/lit/lit,Remove note from @lit-labs/router readme,open
+1188972928,https://api.github.com/repos/lit/lit,[labs] Consider adding a SlotController to help with common slot patterns,open
+1188652124,https://api.github.com/repos/lit/lit,[localize] Nested msg call inside html next to attribute creates invalid placeholder,open
+1186926505,https://api.github.com/repos/lit/lit,[@tests] use more unique identifiers for saucelabs tunnels,open
+1186924526,https://api.github.com/repos/lit/lit,Create more unique suacelabs tunnel identifiers ,open
+1186842547,https://api.github.com/repos/lit/lit,Bump minimist from 1.2.5 to 1.2.6 in /packages/localize/examples/transform-js,open
+1186842448,https://api.github.com/repos/lit/lit,Bump minimist from 1.2.5 to 1.2.6 in /packages/localize/examples/transform-ts,open
+1186842447,https://api.github.com/repos/lit/lit,Bump minimist from 1.2.5 to 1.2.6 in /packages/localize/examples/runtime-js,open
+1186842429,https://api.github.com/repos/lit/lit,Bump minimist from 1.2.5 to 1.2.6 in /packages/localize/examples/runtime-ts,open
+1185632758,https://api.github.com/repos/lit/lit,Center the logo and subtitle in readme,open
+1185222077,https://api.github.com/repos/lit/lit,Serialize saucelabs tests, no concurrency,open
+1185220163,https://api.github.com/repos/lit/lit,Only execute tests relative to environment,open
+1185180208,https://api.github.com/repos/lit/lit,Bump minimist from 1.2.5 to 1.2.6 in /packages/localize-tools,open
+1180879353,https://api.github.com/repos/lit/lit,SSR Docs unclear regarding LitElement hydration,open
+1177484937,https://api.github.com/repos/lit/lit,Test that values are shareable between multiple distinct copies of Lit in the page,open
+1176949381,https://api.github.com/repos/lit/lit,[@lit-labs/router] router.link does not resolve link relative to current route of router,open
+1174586996,https://api.github.com/repos/lit/lit,Remove duplicated `prefixed` in CONTRIBUTING.md,open
+1174126201,https://api.github.com/repos/lit/lit,Add @lit-labs/cli package,open
+1171622949,https://api.github.com/repos/lit/lit,Incorrect sourcemaps causing warning in Astro, Vite,open
+1165011593,https://api.github.com/repos/solid/solid,Note current state/purpose of the repo and location of current work,open
+823615184,https://api.github.com/repos/solid/solid,Someone interested in translating the solid environment into Spanish//Alguien interesado en traducir el entorno Solid al Español?,open
+802197542,https://api.github.com/repos/solid/solid,No workspace in my pod, and no obvious way to create one,open
+691925139,https://api.github.com/repos/solid/solid,Updating all files to link to solidproject.org,open
+565789092,https://api.github.com/repos/solid/solid,Please do not Recommend Services Using Google Analytics,open
+545283969,https://api.github.com/repos/solid/solid,Can't change folder sharing permission (Error reading default ACL. status 403),open
+505050183,https://api.github.com/repos/solid/solid,readme: Fix the level issue on TOC,open
+473435780,https://api.github.com/repos/solid/solid,PAKE,open
+459319839,https://api.github.com/repos/solid/solid,added some key OpenLink folks to CONTRIBUTORS.md,open
+446434639,https://api.github.com/repos/solid/solid,Missing Prerequisites in README,open
+437818722,https://api.github.com/repos/solid/solid,Building forms with RDFS or ShEx,open
+432859883,https://api.github.com/repos/solid/solid,Extend authorization to other attributes beyond identity,open
+430183403,https://api.github.com/repos/solid/solid,Fix outdated and broken links in "Places to chat section" of Readme,open
+426295773,https://api.github.com/repos/solid/solid,Europe is splitting the internet into three -- Does this affect Solid?,open
+421943560,https://api.github.com/repos/solid/solid,can we make a turing machine on a solid POD?,open
+416511389,https://api.github.com/repos/solid/solid,When a resource is deleted, should the acl be too?,open
+416385853,https://api.github.com/repos/solid/solid,Creating a PATCH request,open
+413691156,https://api.github.com/repos/solid/solid,Getting access to the private data of the user's POD,open
+403611896,https://api.github.com/repos/solid/solid,replace AddressBook with VCard | closes #122,open
+397134507,https://api.github.com/repos/solid/solid,Auto-block based on patterns,open
+396225531,https://api.github.com/repos/solid/solid,Warn users not familiar with console about dangers of pasting code,open
+395080269,https://api.github.com/repos/solid/solid,IPFS and Solid,open
+391604057,https://api.github.com/repos/solid/solid,Better navigation for public folder,open
+388750933,https://api.github.com/repos/solid/solid,contacts-footprint.md,open
+387075782,https://api.github.com/repos/solid/solid,Data Portability in Solid,open
+383960305,https://api.github.com/repos/solid/solid,typo in card viewer,open
+381162626,https://api.github.com/repos/solid/solid,Including Solid Chat Tools,open
+380289205,https://api.github.com/repos/solid/solid,WebIDs and WebAuthn,open
+377375743,https://api.github.com/repos/solid/solid,Symbolic-Link header ,open
+377205315,https://api.github.com/repos/solid/solid,Make decisions regarding default vocabularies for footprints,open
+1190194600,https://api.github.com/repos/MithrilJS/mithril.js,Bump minimist from 1.2.5 to 1.2.6,open
+1160563762,https://api.github.com/repos/MithrilJS/mithril.js,Automate mithril's release workflow,open
+1152319548,https://api.github.com/repos/MithrilJS/mithril.js,Switch from remove callbacks to passing an `AbortSignal` aborted after removal + accepting a removal promise.,open
+1152282003,https://api.github.com/repos/MithrilJS/mithril.js,Memory usage statistics,open
+1148474085,https://api.github.com/repos/MithrilJS/mithril.js,[WIP] Kick bundler - use esbuild for building,open
+1146081639,https://api.github.com/repos/MithrilJS/mithril.js,Kick promise polyfill,open
+1088748385,https://api.github.com/repos/MithrilJS/mithril.js,Merge next,open
+904503241,https://api.github.com/repos/MithrilJS/mithril.js,Simplify component constructor to function that returns either a view function or a vnode tree,open
+904484885,https://api.github.com/repos/MithrilJS/mithril.js,Separate lifecycle methods from attributes and components,open
+904432116,https://api.github.com/repos/MithrilJS/mithril.js,Replace `onbeforeupdate` with `m.retain()`,open
+877768548,https://api.github.com/repos/MithrilJS/mithril.js,Remove `m.jsonp`,open
+877758386,https://api.github.com/repos/MithrilJS/mithril.js,Move from `return false` to `m.capture(event)` for event handlers,open
+876946506,https://api.github.com/repos/MithrilJS/mithril.js,Add a special vnode that allows manipulating attributes on a raw event target reference,open
+853194143,https://api.github.com/repos/MithrilJS/mithril.js,IPv6 URL causes "Error `Template parameter names *must* be separated`" error in m.request,open
+849520609,https://api.github.com/repos/MithrilJS/mithril.js,Testing Tutorial,open
+835499482,https://api.github.com/repos/MithrilJS/mithril.js,When utilizing shared mithril components imported from another node package, mithril render and routing do not work as expected,open
+805803019,https://api.github.com/repos/MithrilJS/mithril.js,Improve m.request to simplify access response headers,open
+767310817,https://api.github.com/repos/MithrilJS/mithril.js,Error handling: Duplicated components after an error is thrown in a view,open
+765665171,https://api.github.com/repos/MithrilJS/mithril.js,mithril stream .map does not trigger next stream value,open
+737063606,https://api.github.com/repos/MithrilJS/mithril.js,Add hyperscript link to the main index.html page,open
+693051663,https://api.github.com/repos/MithrilJS/mithril.js,MithrilJS Stream.combine() violates atomic update semantics.,open
+689118749,https://api.github.com/repos/MithrilJS/mithril.js,Errors are not forwarded to window.onerror,open
+676410777,https://api.github.com/repos/MithrilJS/mithril.js,Review/cleanup of "Who uses mithril",open
+665021217,https://api.github.com/repos/MithrilJS/mithril.js,Cannot use object itself as key,open
+660602223,https://api.github.com/repos/MithrilJS/mithril.js,Updates to keyed lists break FLIP animations when they occur mid-animation,open
+659047822,https://api.github.com/repos/MithrilJS/mithril.js,Provide success as a second argument to RequestOptions.deserialize,open
+618298277,https://api.github.com/repos/MithrilJS/mithril.js,Intermittent "Could not resolve default route" error,open
+611087248,https://api.github.com/repos/MithrilJS/mithril.js,`onbeforeremove` should tolerate thenables that synchronously resolve,open
+606766986,https://api.github.com/repos/MithrilJS/mithril.js,Replace m.route by a Router component,open
+586637023,https://api.github.com/repos/MithrilJS/mithril.js,Mithril's default `extract` should be exposed so users can fall back on it,open
+1198570158,https://api.github.com/repos/alpinejs/alpine,Bump moment from 2.29.1 to 2.29.2,open
+1198554293,https://api.github.com/repos/alpinejs/alpine,Transitionend event listener doesn't work on Safari (macOS + iOS),open
+1192967618,https://api.github.com/repos/alpinejs/alpine,Alpine doesn't work for me on IOS (Safari and chrome),open
+1188719755,https://api.github.com/repos/alpinejs/alpine,Inconsistent update with template x-if,open
+1158939061,https://api.github.com/repos/alpinejs/alpine,Documentation for `destroy()` and component cleanup,open
+1124347632,https://api.github.com/repos/alpinejs/alpine,Error with Alpine and Livewire related with x-show,open
+1116851754,https://api.github.com/repos/alpinejs/alpine,Update CSP documentation to clarify availability of the CSP build,open
+1091511336,https://api.github.com/repos/alpinejs/alpine,New event specific for plugin initialization,open
+1089292851,https://api.github.com/repos/alpinejs/alpine,When using browser history, the x-model attribute doesn't keep the state in sync with the input element.,open
+1088635971,https://api.github.com/repos/alpinejs/alpine,Morph - allow for full page morphs,open
+1074191525,https://api.github.com/repos/alpinejs/alpine,Prevent breaking when Alpine is transpiled to ES5 (fixes #2454),open
+1028009666,https://api.github.com/repos/alpinejs/alpine,Add $cookie,open
+1013789711,https://api.github.com/repos/alpinejs/alpine,Fix x-model for csp build,open
+1010006994,https://api.github.com/repos/alpinejs/alpine,Memory and DOM element leaks in magic,open
+923199150,https://api.github.com/repos/alpinejs/alpine,New translation,open

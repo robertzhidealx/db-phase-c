@@ -1,0 +1,15 @@
+1296269,Hello-World,My first repository on GitHub!,https://api.github.com/repos/octocat/Hello-World,1721,1830,1830,860
+243950408,HowToCook,程序员在家做饭方法指南。Programmer's guide about how to cook at home (Chinese only).,https://api.github.com/repos/Anduin2017/HowToCook,5391,36580,36580,262
+74293321,svelte,Cybernetically enhanced web apps,https://api.github.com/repos/sveltejs/svelte,2823,57270,57270,708
+10270250,react,A declarative, efficient, and flexible JavaScript library for building user interfaces.,https://api.github.com/repos/facebook/react,38201,186023,186023,917
+24195339,angular,The modern web developer’s platform,https://api.github.com/repos/angular/angular,21251,80656,80656,1412
+11730342,vue,🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.,https://api.github.com/repos/vuejs/vue,31879,194804,194804,567
+70107786,next.js,The React Framework,https://api.github.com/repos/vercel/next.js,17799,84940,84940,1212
+71995937,nuxt.js,The Intuitive Vue(2) Framework,https://api.github.com/repos/nuxt/nuxt.js,3218,39779,39779,525
+311525798,Web-Dev-For-Beginners,24 Lessons, 12 Weeks, Get Started as a Web Developer,https://api.github.com/repos/microsoft/Web-Dev-For-Beginners,6602,45566,45566,4
+6498492,javascript,JavaScript Style Guide,https://api.github.com/repos/airbnb/javascript,23255,121842,121842,134
+304344049,kit,The fastest way to build Svelte apps,https://api.github.com/repos/sveltejs/kit,695,7813,7813,406
+95797174,lit,Lit is a simple library for building fast, lightweight web components.,https://api.github.com/repos/lit/lit,568,10939,10939,254
+46769790,solid,Solid - Re-decentralizing the web (project directory),https://api.github.com/repos/solid/solid,384,8108,8108,141
+17814354,mithril.js,A JavaScript Framework for Building Brilliant Applications,https://api.github.com/repos/MithrilJS/mithril.js,943,13169,13169,113
+224663696,alpine,A rugged, minimal framework for composing JavaScript behavior in your markup. ,https://api.github.com/repos/alpinejs/alpine,894,20332,20332,15

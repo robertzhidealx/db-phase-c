@@ -58,8 +58,7 @@
 1167166428,https://api.github.com/repos/sveltejs/svelte,Discrepancy of `<select value>` from `<option selected>`,open
 1165818005,https://api.github.com/repos/sveltejs/svelte,[fix] Export types needed for defining custom stores,open
 1164769953,https://api.github.com/repos/sveltejs/svelte,[docs] Fix statement about the order of bind: and on:,open
-1198723242,https://api.github.com/repos/facebook/react,Bug: onaginani,open
-1198718873,https://api.github.com/repos/facebook/react,Replace zero with `NoLanes` for consistency in `FiberLane`,open
+1198870705,https://api.github.com/repos/facebook/react,Bug: tsconfig file keep being reset while excuting running start,open
 1197956718,https://api.github.com/repos/facebook/react,Use FB specific stream config for native-relay,open
 1197355166,https://api.github.com/repos/facebook/react,[Flight] Add a better error message for undefined server components,open
 1196863791,https://api.github.com/repos/facebook/react,Support for selectionchange event for HTML input element and HTML textarea element,open
@@ -88,6 +87,8 @@
 1186607524,https://api.github.com/repos/facebook/react,NPM "version" export format changed (now includes SHA and date),open
 1185437533,https://api.github.com/repos/facebook/react,[Fizz] Send errors down to client,open
 1184239460,https://api.github.com/repos/facebook/react,Bug: Elements in a list incorrectly receive hover state when a sibling is removed as result of a touch event,open
+1183111823,https://api.github.com/repos/facebook/react,Standalone react-devtools: select component instances in iframe,open
+1198752717,https://api.github.com/repos/angular/angular,feat(docs-infra): add close button to search-results aio panel,open
 1198737140,https://api.github.com/repos/angular/angular,Duplicated code in Change_detection_util.ts  ,open
 1198717842,https://api.github.com/repos/angular/angular,Calling ChangeDetectorRef.detectChanges in child view causes error in parent NgForOf directive,open
 1198716197,https://api.github.com/repos/angular/angular,docs: add powershell execution policies note,open
@@ -117,7 +118,8 @@
 1194048775,https://api.github.com/repos/angular/angular,wrong punctuation in angular doc,open
 1193848682,https://api.github.com/repos/angular/angular,Text interpolation update,open
 1193757115,https://api.github.com/repos/angular/angular,Delete SVG in templates doc,open
-1193750991,https://api.github.com/repos/angular/angular,Delete Template statements doc,open
+1198860983,https://api.github.com/repos/vuejs/vue,v-slot出来的值不会渲染,open
+1198569763,https://api.github.com/repos/vuejs/vue,Update events.js,open
 1188208649,https://api.github.com/repos/vuejs/vue,fix Module Federation & Vue 2 SSR: support async initialization #12511,open
 1187844300,https://api.github.com/repos/vuejs/vue,Module Federation & Vue 2 SSR: support async initialization,open
 1178389839,https://api.github.com/repos/vuejs/vue,Allow inferring types from Vue.set(object, ...) pattern,open
@@ -146,12 +148,11 @@
 1097083572,https://api.github.com/repos/vuejs/vue,Chore: fixed punctuation errors,open
 1090055682,https://api.github.com/repos/vuejs/vue,ci: Update CircleCI pipeline to run Codecov,open
 1084482504,https://api.github.com/repos/vuejs/vue,feat(types): add types for hook events,open
-1071501898,https://api.github.com/repos/vuejs/vue,fix #12374: do not hyphenate or omit CSS variables in style attribute,open
-1070694315,https://api.github.com/repos/vuejs/vue,vue-server-renderer: CSS variables get lost in dynamic style attributes,open
+1198758932,https://api.github.com/repos/vercel/next.js,Docs: upgrade guide with specific React version,open
+1198754674,https://api.github.com/repos/vercel/next.js,Refactor eslint-plugin-next node-attributes,open
 1198721945,https://api.github.com/repos/vercel/next.js,[examples] Update styled-components to use Babel and Typescript,open
 1198616922,https://api.github.com/repos/vercel/next.js,webpack config function in next.config.js   run three tim,open
 1198543619,https://api.github.com/repos/vercel/next.js,Image Optimization loads also original image,open
-1198295029,https://api.github.com/repos/vercel/next.js,URGENT: Serverless runtimes corrupted on some regions,open
 1198002744,https://api.github.com/repos/vercel/next.js,When using getLayout, the Layout component can't access parent Contexts provided in _app,open
 1197974767,https://api.github.com/repos/vercel/next.js,Fix outputStandalone with optimizeCss,open
 1197956097,https://api.github.com/repos/vercel/next.js,[Experimental] strategy="worker" not loading js file ,open
@@ -177,7 +178,6 @@
 1196516049,https://api.github.com/repos/vercel/next.js,Support Postcss plugin - postcss-each v1.1.0,open
 1196431155,https://api.github.com/repos/vercel/next.js,Version pinning in eslint-config-next causes difficulties in supporting multiple configs,open
 1196327294,https://api.github.com/repos/vercel/next.js,refactor(build): no force transpile optional chaining,open
-1196324767,https://api.github.com/repos/vercel/next.js,Export RouterContext,open
 1196968401,https://api.github.com/repos/nuxt/nuxt.js,nuxt.js generate Bug,open
 1193385286,https://api.github.com/repos/nuxt/nuxt.js,publicRuntimeConfig variables on client side always equals undefined,open
 1192872223,https://api.github.com/repos/nuxt/nuxt.js,Opt-out for payload.js generation on static websites,open

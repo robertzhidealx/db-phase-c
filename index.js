@@ -270,6 +270,21 @@ async function downloadsOnDate() {
 	}
 	writeFile('files/downloadsOnDate.txt', db.join('\n'));
 }
+// InOrg(userID, orgID)
+// Jessie
+async function InOrg() {}
+
+// HasPackage(orgID, packageName)
+// Jessie
+async function HasPackage() {}
+
+// OwnsRepo(repoID, userID)
+// Robert
+async function OwnsRepo() {}
+
+// IssueAssignee(issueID, assigneeID, assigneeLogin)
+// Robert
+async function IssueAssignee() {}
 
 function get(url, withAuth = true) {
 	const options = {

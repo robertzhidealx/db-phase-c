@@ -11,7 +11,7 @@ const token = process.env.TOKEN;
 // downloadsOnDate();
 // user();
 // issue();
-package();
+// package();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -67,6 +67,7 @@ async function organization() {
     "moment",
     "date-fns",
     "gumroad",
+    "Anduin2017",
   ];
   const db = [];
   for (const org of orgs) {
@@ -81,8 +82,9 @@ async function organization() {
       location,
       type,
     } = await get(`https://api.github.com/orgs/${org}`);
+    if (!id) continue;
     db.push(
-      `${id},${login},${name},${description},${email},${created_at},${updated_at},${location},${type}`
+      `(${id},${login},${name},${description},${email},${created_at},${updated_at},${location},${type}),`
     );
   }
   writeFile("files/organization.txt", db.join("\n"));
@@ -172,6 +174,7 @@ async function repository() {
     ["moment", "luxon"],
     ["gumroad", "countdown.js"],
     ["rmm5t", "jquery-timeago"],
+    ["Anduin2017", "HowToCook"],
   ];
   const db = [];
   for (const [owner, repo] of pairs) {
@@ -186,7 +189,7 @@ async function repository() {
       open_issues_count,
     } = await get(`https://api.github.com/repos/${owner}/${repo}`);
     db.push(
-      `${id},${name},${description},${url},${forks_count},${stargazers_count},${watchers_count},${open_issues_count}`
+      `(${id},${name},${description},${url},${forks_count},${stargazers_count},${watchers_count},${open_issues_count}),`
     );
   }
   writeFile("files/repository.txt", db.join("\n"));
@@ -278,13 +281,14 @@ async function user() {
     ["moment", "luxon"],
     ["gumroad", "countdown.js"],
     ["rmm5t", "jquery-timeago"],
+    ["Anduin2017", "HowToCook"],
   ];
   const db = [];
   for (const [owner] of pairs) {
     const { id, login, url, type } = await get(
       `https://api.github.com/users/${owner}`
     );
-    db.push(`${id},${login},${url},${type}`);
+    db.push(`(${id},${login},${url},${type}),`);
   }
   // const users = await get(`https://api.github.com/users`);
   // for (let i = 0; i < 30; i++) {
@@ -306,6 +310,7 @@ async function package() {
     ["nuxt", "nuxt.js"],
     ["airbnb", "javascript"],
     ["sveltejs", "kit"],
+    ["Anduin2017", "HowToCook"],
   ];
   const db = [];
   for (let i = 0; i < pairs.length; i++) {
@@ -315,7 +320,8 @@ async function package() {
     const version = target.collected.metadata.version;
     const star = target.collected.npm.starsCount;
     const score = target.score.final;
-    db.push(`${name},${version},${star},${score}`);
+    if (!name) continue;
+    db.push(`(${name},${version},${star},${score}),`);
   }
   writeFile("files/package.txt", db.join("\n"));
   //target = await get(`https://api.npms.io/v2/search?q=cross+spawn`);
@@ -410,6 +416,7 @@ async function issue() {
     ["moment", "luxon"],
     ["gumroad", "countdown.js"],
     ["rmm5t", "jquery-timeago"],
+    ["Anduin2017", "HowToCook"],
   ];
   const db = [];
   for (let i = 0; i < pairs.length; i++) {
@@ -418,7 +425,7 @@ async function issue() {
     target = await get(`https://api.github.com/repos/${owner}/${repo}/issues`);
     for (let j = 0; j < target.length; j++) {
       const { id, repository_url, title, state } = target[j];
-      db.push(`${id},${repository_url},${title},${state}`);
+      db.push(`(${id},${repository_url},${title},${state}),`);
     }
   }
   writeFile("files/issue.txt", db.join("\n"));
@@ -511,6 +518,7 @@ async function commit() {
     ["moment", "luxon"],
     ["gumroad", "countdown.js"],
     ["rmm5t", "jquery-timeago"],
+    ["Anduin2017", "HowToCook"],
   ];
   const db = [];
   for (const [owner, repo] of pairs) {
@@ -526,9 +534,9 @@ async function commit() {
       commit: commitObj,
     } of commits) {
       db.push(
-        `${commitId},${repoId},${authorObj ? authorObj.login : null},${
+        `(${commitId},${repoId},${authorObj ? authorObj.login : null},${
           commitObj.committer.name
-        },${commitObj.comment_count},${commitObj.verification.verified}`
+        },${commitObj.comment_count},${commitObj.verification.verified}),`
       );
     }
   }
@@ -623,6 +631,7 @@ async function commitStats() {
     ["moment", "luxon"],
     ["gumroad", "countdown.js"],
     ["rmm5t", "jquery-timeago"],
+    ["Anduin2017", "HowToCook"],
   ];
   const db = [];
   for (const [owner, repo] of pairs) {
@@ -634,7 +643,7 @@ async function commitStats() {
         `https://api.github.com/repos/${owner}/${repo}/commits/${commitId}`
       );
       db.push(
-        `${commitId},${statsObj.additions},${statsObj.deletions},${statsObj.total}`
+        `(${commitId},${statsObj.additions},${statsObj.deletions},${statsObj.total}),`
       );
     }
   }
@@ -723,6 +732,7 @@ async function downloads() {
     "luxon",
     "countdown.js",
     "jquery-timeago",
+    "HowToCook",
   ];
   const db = [];
   for (const pkg of pkgs) {
@@ -731,7 +741,7 @@ async function downloads() {
       false
     );
     if (!package) continue;
-    db.push(`${package},${start},${end},${downloads}`);
+    db.push(`(${package},${start},${end},${downloads}),`);
   }
   writeFile("files/downloads.txt", db.join("\n"));
 }
@@ -818,6 +828,7 @@ async function downloadsOnDate() {
     "luxon",
     "countdown.js",
     "jquery-timeago",
+    "HowToCook",
   ];
   const db = [];
   for (const pkg of pkgs) {
@@ -827,7 +838,7 @@ async function downloadsOnDate() {
     );
     if (!days) continue;
     for (const { day, downloads } of days) {
-      db.push(`${package},${day},${downloads}`);
+      db.push(`(${package},${day},${downloads}),`);
     }
   }
   writeFile("files/downloadsOnDate.txt", db.join("\n"));

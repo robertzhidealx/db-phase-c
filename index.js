@@ -3,10 +3,10 @@ require("dotenv").config();
 
 const token = process.env.TOKEN;
 
-//organization();
-//repository();
-//commit();
-//commitStats();
+// organization();
+// repository();
+// commit();
+commitStats();
 // downloads();
 // downloadsOnDate();
 // user();
@@ -302,30 +302,105 @@ async function user() {
 async function package() {
   const pairs = [
     ["octocat", "hello-world"],
+    ["Anduin2017", "HowToCook"],
     ["sveltejs", "svelte"],
     ["facebook", "react"],
     ["angular", "angular"],
     ["vuejs", "vue"],
     ["vercel", "next.js"],
     ["nuxt", "nuxt.js"],
+    ["microsoft", "Web-Dev-For-Beginners"],
     ["airbnb", "javascript"],
     ["sveltejs", "kit"],
+    ["lit", "lit"],
+    ["solid", "solid"],
+    ["mithriljs", "mithril.js"],
+    ["alpinejs", "alpine"],
+    ["aurelia", "framework"],
+    ["jashkenas", "backbone"],
+    ["emberjs", "ember.js"],
+    ["meteor", "meteor"],
+    ["ractivejs", "ractive"],
+    ["vuejs", "vue"],
+    ["sveltejs", "svelte"],
+    ["knockout", "knockout"],
+    ["spine", "spine"],
+    ["techlayer", "espresso.js"],
+    ["canjs", "canjs"],
+    ["hyperapp", "hyperapp"],
+    ["developit", "preact"],
+    ["NativeScript", "NativeScript"],
+    ["riot", "riot"],
+    ["walmartlabs", "thorax"],
+    ["chaplinjs", "chaplin"],
+    ["marionettejs", "backbone.marionette"],
+    ["ripplejs", "ripple"],
+    ["mikeric", "rivets"],
+    ["derbyjs", "derby"],
+    ["russll", "awesome-derby"],
+    ["gwendall", "way.js"],
+    ["astoilkov", "jsblocks"],
+    ["feathersjs", "feathers"],
+    ["Wildhoney", "Keo"],
+    ["emadalam", "atvjs"],
+    ["alpinejs", "alpine"],
+    ["infernojs", "inferno"],
+    ["aidenybai", "lucia"],
+    ["adonisjs", "core"],
+    ["artf", "grapesjs"],
+    ["retejs", "rete"],
+    ["jagenjo", "litegraph.js"],
+    ["jerosoler", "Drawflow"],
+    ["google", "blockly"],
+    ["aidenybai", "million"],
+    ["Semantic-Org", "Semantic-UI"],
+    ["vitmalina", "w2ui"],
+    ["mrmrs", "fluidity"],
+    ["sapo", "ink"],
+    ["jashkenas", "underscore"],
+    ["jashkenas", "underscore"],
+    ["jashkenas", "underscore"],
+    ["lodash", "lodash"],
+    ["andrewplummer", "sugar"],
+    ["ReactiveX", "rxjs"],
+    ["baconjs", "bacon.js"],
+    ["pozadi", "kefir"],
+    ["caolan", "highland"],
+    ["cujojs", "most"],
+    ["mobxjs", "mobx"],
+    ["cyclejs", "cyclejs"],
+    ["concentjs", "concent"],
+    ["immutable-js", "immutable-js"],
+    ["swannodette", "mori"],
+    ["mauriciosantos", "buckets-js"],
+    ["flesler", "hashmap"],
+    ["anvaka", "ngraph.graph"],
+    ["moment", "moment"],
+    ["rmm5t", "jquery-timeago"],
+    ["matthewmueller", "date"],
+    ["date-fns", "date-fns"],
+    ["rmm5t", "jquery-timeago"],
+    ["iamkun", "dayjs"],
+    ["moment", "luxon"],
+    ["gumroad", "countdown.js"],
+    ["rmm5t", "jquery-timeago"],
     ["Anduin2017", "HowToCook"],
   ];
   const db = [];
-  for (let i = 0; i < pairs.length; i++) {
-    let owner = pairs[i][1];
-    const target = await get(`https://api.npms.io/v2/package/${owner}`, false);
+  for (const [_, repo] of pairs) {
+    const target = await get(`https://api.npms.io/v2/package/${repo}`, false);
+    // const { sha: packageID } = await get(
+    //   `https://api.github.com/orgs/${owner}/packages/npm/${repo}`
+    // );
+    // if (!packageID) continue;
+    if (!target.collected || !target.score) continue;
     const name = target.collected.metadata.name;
     const version = target.collected.metadata.version;
     const star = target.collected.npm.starsCount;
     const score = target.score.final;
-    if (!name) continue;
     db.push(`(${name},${version},${star},${score}),`);
   }
   writeFile("files/package.txt", db.join("\n"));
-  //target = await get(`https://api.npms.io/v2/search?q=cross+spawn`);
-  // console.log(JSON.stringify(target));
 }
 
 // Issue(issueID, repoID, title, body, state)
@@ -642,6 +717,7 @@ async function commitStats() {
       const { stats: statsObj } = await get(
         `https://api.github.com/repos/${owner}/${repo}/commits/${commitId}`
       );
+      if (!statsObj) continue;
       db.push(
         `(${commitId},${statsObj.additions},${statsObj.deletions},${statsObj.total}),`
       );

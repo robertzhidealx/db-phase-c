@@ -57,14 +57,10 @@
 1167166428,https://api.github.com/repos/sveltejs/svelte,Discrepancy of `<select value>` from `<option selected>`,open
 1165818005,https://api.github.com/repos/sveltejs/svelte,[fix] Export types needed for defining custom stores,open
 1164769953,https://api.github.com/repos/sveltejs/svelte,[docs] Fix statement about the order of bind: and on:,open
-<<<<<<< HEAD
 1163863399,https://api.github.com/repos/sveltejs/svelte,[fix] Svelte for Web Components DOMException: Failed to execute 'define' on 'CustomElementRegistry': this name has already been used with this registry,open
 1199041750,https://api.github.com/repos/facebook/react,Suggestion: Process higher priority renders after each useEffect callback,open
 1198981326,https://api.github.com/repos/facebook/react,Remove unnecessary check,open
 1198974415,https://api.github.com/repos/facebook/react,Bug: State updates in ResizeObserver callbacks are applied after paint and cause visual glitches,open
-=======
-1198870705,https://api.github.com/repos/facebook/react,Bug: tsconfig file keep being reset while excuting running start,open
->>>>>>> 212fab094b87f222149d0e1c52c0a430eb0e68ba
 1197956718,https://api.github.com/repos/facebook/react,Use FB specific stream config for native-relay,open
 1197355166,https://api.github.com/repos/facebook/react,[Flight] Add a better error message for undefined server components,open
 1196863791,https://api.github.com/repos/facebook/react,Support for selectionchange event for HTML input element and HTML textarea element,open
@@ -127,16 +123,8 @@
 1194396895,https://api.github.com/repos/angular/angular,build: update github/codeql-action action to v2.1.8,open
 1194339791,https://api.github.com/repos/angular/angular,Angular.io website is not GDPR compliant,open
 1194052976,https://api.github.com/repos/angular/angular,docs(forms): fix incorrect punctuation,open
-<<<<<<< HEAD
 1199319732,https://api.github.com/repos/vuejs/vue,v-slot出来的值不会渲染,open
 1198966452,https://api.github.com/repos/vuejs/vue,Merge the code of the event modifier,open
-=======
-1194048775,https://api.github.com/repos/angular/angular,wrong punctuation in angular doc,open
-1193848682,https://api.github.com/repos/angular/angular,Text interpolation update,open
-1193757115,https://api.github.com/repos/angular/angular,Delete SVG in templates doc,open
-1198860983,https://api.github.com/repos/vuejs/vue,v-slot出来的值不会渲染,open
-1198569763,https://api.github.com/repos/vuejs/vue,Update events.js,open
->>>>>>> 212fab094b87f222149d0e1c52c0a430eb0e68ba
 1188208649,https://api.github.com/repos/vuejs/vue,fix Module Federation & Vue 2 SSR: support async initialization #12511,open
 1187844300,https://api.github.com/repos/vuejs/vue,Module Federation & Vue 2 SSR: support async initialization,open
 1178389839,https://api.github.com/repos/vuejs/vue,Allow inferring types from Vue.set(object, ...) pattern,open
@@ -165,15 +153,12 @@
 1097083572,https://api.github.com/repos/vuejs/vue,Chore: fixed punctuation errors,open
 1090055682,https://api.github.com/repos/vuejs/vue,ci: Update CircleCI pipeline to run Codecov,open
 1084482504,https://api.github.com/repos/vuejs/vue,feat(types): add types for hook events,open
-<<<<<<< HEAD
 1199335889,https://api.github.com/repos/vercel/next.js,getServerSideProps not getting the updated cookie from the middleware,open
 1199128345,https://api.github.com/repos/vercel/next.js,Using rewrites with domain-specific i18n causes redirect to defaulLocale,open
 1199125842,https://api.github.com/repos/vercel/next.js,router.locale value is in defaultLocale and links point to defaultLocale localization with domain-specific i18n,open
 1199082037,https://api.github.com/repos/vercel/next.js,fixed typo, that should say 'in' not 'from',open
 1199075224,https://api.github.com/repos/vercel/next.js,with-tailwindcss is by default creating typescript,open
 1199049237,https://api.github.com/repos/vercel/next.js,Middleware is broken with Azure CDN,open
-=======
->>>>>>> 212fab094b87f222149d0e1c52c0a430eb0e68ba
 1198758932,https://api.github.com/repos/vercel/next.js,Docs: upgrade guide with specific React version,open
 1198754674,https://api.github.com/repos/vercel/next.js,Refactor eslint-plugin-next node-attributes,open
 1198721945,https://api.github.com/repos/vercel/next.js,[examples] Update styled-components to use Babel and Typescript,open
@@ -198,15 +183,6 @@
 1196992812,https://api.github.com/repos/vercel/next.js,Next.js router.isReady never set to true on custom 404 page,open
 1196976959,https://api.github.com/repos/vercel/next.js,SWC + styled-components: element classes & style classes are not synched,open
 1196909389,https://api.github.com/repos/vercel/next.js,Image Optimizer - upstream max-age regression,open
-<<<<<<< HEAD
-=======
-1196898518,https://api.github.com/repos/vercel/next.js,issue with import dynamic ,open
-1196809407,https://api.github.com/repos/vercel/next.js,Ordering of request query being changed in production,open
-1196760568,https://api.github.com/repos/vercel/next.js,examples: add Hasura,open
-1196516049,https://api.github.com/repos/vercel/next.js,Support Postcss plugin - postcss-each v1.1.0,open
-1196431155,https://api.github.com/repos/vercel/next.js,Version pinning in eslint-config-next causes difficulties in supporting multiple configs,open
-1196327294,https://api.github.com/repos/vercel/next.js,refactor(build): no force transpile optional chaining,open
->>>>>>> 212fab094b87f222149d0e1c52c0a430eb0e68ba
 1196968401,https://api.github.com/repos/nuxt/nuxt.js,nuxt.js generate Bug,open
 1193385286,https://api.github.com/repos/nuxt/nuxt.js,publicRuntimeConfig variables on client side always equals undefined,open
 1192872223,https://api.github.com/repos/nuxt/nuxt.js,Opt-out for payload.js generation on static websites,open

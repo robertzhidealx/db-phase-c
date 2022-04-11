@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 74293321,svelte,Cybernetically enhanced web apps,https://api.github.com/repos/sveltejs/svelte,2823,57298,57298,707
 10270250,react,A declarative, efficient, and flexible JavaScript library for building user interfaces.,https://api.github.com/repos/facebook/react,38210,186083,186083,918
 24195339,angular,The modern web developer’s platform,https://api.github.com/repos/angular/angular,21262,80675,80675,1416
@@ -78,3 +79,20 @@
 47118129,luxon,⏱ A library for working with dates and times in JS,https://api.github.com/repos/moment/luxon,598,12326,12326,98
 11295981,countdown.js,Super simple countdowns.,https://api.github.com/repos/gumroad/countdown.js,29,392,392,3
 35219,jquery-timeago,:clock8: The original jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago").,https://api.github.com/repos/rmm5t/jquery-timeago,743,3814,3814,47
+=======
+(1296269,'Hello-World','My first repository on GitHub!','https://api.github.com/repos/octocat/Hello-World',1720,1832,1832,860),
+(243950408,'HowToCook','程序员在家做饭方法指南。Programmer's guide about how to cook at home (Chinese only).','https://api.github.com/repos/Anduin2017/HowToCook',5409,36649,36649,262),
+(74293321,'svelte','Cybernetically enhanced web apps','https://api.github.com/repos/sveltejs/svelte',2824,57276,57276,708),
+(10270250,'react','A declarative, efficient, and flexible JavaScript library for building user interfaces.','https://api.github.com/repos/facebook/react',38202,186047,186047,916),
+(24195339,'angular','The modern web developer’s platform','https://api.github.com/repos/angular/angular',21254,80659,80659,1413),
+(11730342,'vue','🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.','https://api.github.com/repos/vuejs/vue',31879,194817,194817,568),
+(70107786,'next.js','The React Framework','https://api.github.com/repos/vercel/next.js',17803,84996,84996,1213),
+(71995937,'nuxt.js','The Intuitive Vue(2) Framework','https://api.github.com/repos/nuxt/nuxt.js',3219,39779,39779,525),
+(311525798,'Web-Dev-For-Beginners','24 Lessons, 12 Weeks, Get Started as a Web Developer','https://api.github.com/repos/microsoft/Web-Dev-For-Beginners',6609,45601,45601,4),
+(6498492,'javascript','JavaScript Style Guide','https://api.github.com/repos/airbnb/javascript',23258,121847,121847,134),
+(304344049,'kit','The fastest way to build Svelte apps','https://api.github.com/repos/sveltejs/kit',698,7821,7821,406),
+(95797174,'lit','Lit is a simple library for building fast, lightweight web components.','https://api.github.com/repos/lit/lit',568,10940,10940,254),
+(46769790,'solid','Solid - Re-decentralizing the web (project directory)','https://api.github.com/repos/solid/solid',384,8108,8108,141),
+(17814354,'mithril.js','A JavaScript Framework for Building Brilliant Applications','https://api.github.com/repos/MithrilJS/mithril.js',943,13169,13169,113),
+(224663696,'alpine','A rugged, minimal framework for composing JavaScript behavior in your markup. ','https://api.github.com/repos/alpinejs/alpine',895,20335,20335,15),
+>>>>>>> 212fab094b87f222149d0e1c52c0a430eb0e68ba

@@ -3,15 +3,15 @@ require("dotenv").config();
 
 const token = process.env.TOKEN;
 
- organization();
- repository();
- commit();
-commitStats();
- downloads();
-downloadsOnDate();
-user();
-issue();
-package();
+//  organization();
+//  repository();
+//  commit();
+// commitStats();
+//  downloads();
+// downloadsOnDate();
+// user();
+// issue();
+// package();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {

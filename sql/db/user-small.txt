@@ -1,0 +1,10 @@
+583231,octocat,https://api.github.com/users/octocat,User
+19531547,Anduin2017,https://api.github.com/users/Anduin2017,User
+23617963,sveltejs,https://api.github.com/users/sveltejs,Organization
+69631,facebook,https://api.github.com/users/facebook,Organization
+139426,angular,https://api.github.com/users/angular,Organization
+6128107,vuejs,https://api.github.com/users/vuejs,Organization
+14985020,vercel,https://api.github.com/users/vercel,Organization
+23360933,nuxt,https://api.github.com/users/nuxt,Organization
+6154722,microsoft,https://api.github.com/users/microsoft,Organization
+698437,airbnb,https://api.github.com/users/airbnb,Organization

@@ -152,7 +152,7 @@ const singles = [
 // downloadsOnDate();
 // user();
 // issue();
-// package();
+package();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -217,21 +217,22 @@ async function user() {
 
 // Package (packageName, stars, version, latestUpdated, latestCreated, size, packageHtmlUrl)
 async function package() {
-  const db = [];
-  for (const [_, repo] of pairs) {
-    const target = await get(`https://api.npms.io/v2/package/${repo}`, false);
-    // const { sha: packageID } = await get(
-    //   `https://api.github.com/orgs/${owner}/packages/npm/${repo}`
-    // );
-    // if (!packageID) continue;
-    if (!target.collected || !target.score) continue;
-    const name = target.collected.metadata.name;
-    const version = target.collected.metadata.version;
-    const star = target.collected.npm.starsCount;
-    const score = target.score.final;
-    db.push(`${name},${version},${star},${score}`);
+  const package = [];
+  const hasPackage = [];
+  for (const [owner, repo] of pairs) {
+    const { id } = await get(`https://api.github.com/orgs/${owner}`);
+    if (!id) continue;
+    const pkgRes = await get(`https://api.npms.io/v2/package/${repo}`);
+    if (!pkgRes.collected || !pkgRes.collected.metadata) continue;
+    const name = pkgRes.collected.metadata.name;
+    const version = pkgRes.collected.metadata.version;
+    const star = pkgRes.collected.npm.starsCount;
+    const score = pkgRes.score.final;
+    hasPackage.push(`${id},'${name}',`);
+    package.push(`'${name}','${version}',${star},${score},`);
   }
-  writeFile("files/package.txt", db.join("\n"));
+  writeFile("files/package.txt", package.join("\n"));
+  writeFile("files/hasPackage.txt", hasPackage.join("\n"));
 }
 
 // Issue(issueID, repoID, title, body, state)

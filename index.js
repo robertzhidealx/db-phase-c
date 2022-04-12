@@ -3,15 +3,15 @@ require("dotenv").config();
 
 const token = process.env.TOKEN;
 
-// organization();
-// repository();
-// commit();
+ organization();
+ repository();
+ commit();
 commitStats();
-// downloads();
-// downloadsOnDate();
-// user();
-// issue();
-// package();
+ downloads();
+downloadsOnDate();
+user();
+issue();
+package();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -84,7 +84,7 @@ async function organization() {
     } = await get(`https://api.github.com/orgs/${org}`);
     if (!id) continue;
     db.push(
-      `(${id},${login},${name},${description},${email},${created_at},${updated_at},${location},${type}),`
+      `${id},${login},${name},${description},${email},${created_at},${updated_at},${location},${type}`
     );
   }
   writeFile("files/organization.txt", db.join("\n"));
@@ -189,7 +189,7 @@ async function repository() {
       open_issues_count,
     } = await get(`https://api.github.com/repos/${owner}/${repo}`);
     db.push(
-      `(${id},${name},${description},${url},${forks_count},${stargazers_count},${watchers_count},${open_issues_count}),`
+      `${id},${name},${description},${url},${forks_count},${stargazers_count},${watchers_count},${open_issues_count}`
     );
   }
   writeFile("files/repository.txt", db.join("\n"));
@@ -288,7 +288,7 @@ async function user() {
     const { id, login, url, type } = await get(
       `https://api.github.com/users/${owner}`
     );
-    db.push(`(${id},${login},${url},${type}),`);
+    db.push(`${id},${login},${url},${type}`);
   }
   // const users = await get(`https://api.github.com/users`);
   // for (let i = 0; i < 30; i++) {
@@ -398,7 +398,7 @@ async function package() {
     const version = target.collected.metadata.version;
     const star = target.collected.npm.starsCount;
     const score = target.score.final;
-    db.push(`(${name},${version},${star},${score}),`);
+    db.push(`${name},${version},${star},${score}`);
   }
   writeFile("files/package.txt", db.join("\n"));
 }
@@ -500,7 +500,7 @@ async function issue() {
     target = await get(`https://api.github.com/repos/${owner}/${repo}/issues`);
     for (let j = 0; j < target.length; j++) {
       const { id, repository_url, title, state } = target[j];
-      db.push(`(${id},${repository_url},${title},${state}),`);
+      db.push(`${id},${repository_url},${title},${state}`);
     }
   }
   writeFile("files/issue.txt", db.join("\n"));
@@ -609,9 +609,9 @@ async function commit() {
       commit: commitObj,
     } of commits) {
       db.push(
-        `(${commitId},${repoId},${authorObj ? authorObj.login : null},${
+        `${commitId},${repoId},${authorObj ? authorObj.login : null},${
           commitObj.committer.name
-        },${commitObj.comment_count},${commitObj.verification.verified}),`
+        },${commitObj.comment_count},${commitObj.verification.verified}`
       );
     }
   }
@@ -719,7 +719,7 @@ async function commitStats() {
       );
       if (!statsObj) continue;
       db.push(
-        `(${commitId},${statsObj.additions},${statsObj.deletions},${statsObj.total}),`
+        `${commitId},${statsObj.additions},${statsObj.deletions},${statsObj.total}`
       );
     }
   }
@@ -817,7 +817,7 @@ async function downloads() {
       false
     );
     if (!package) continue;
-    db.push(`(${package},${start},${end},${downloads}),`);
+    db.push(`${package},${start},${end},${downloads}`);
   }
   writeFile("files/downloads.txt", db.join("\n"));
 }
@@ -914,7 +914,7 @@ async function downloadsOnDate() {
     );
     if (!days) continue;
     for (const { day, downloads } of days) {
-      db.push(`(${package},${day},${downloads}),`);
+      db.push(`${package},${day},${downloads}`);
     }
   }
   writeFile("files/downloadsOnDate.txt", db.join("\n"));

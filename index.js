@@ -144,15 +144,15 @@ const singles = [
   "Anduin2017",
 ];
 
-organization();
-repository();
-commit();
-commitStats();
-downloads();
-downloadsOnDate();
-user();
-issue();
-package();
+// organization();
+// repository();
+// commit();
+// commitStats();
+// downloads();
+// downloadsOnDate();
+// user();
+// issue();
+// package();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -236,13 +236,12 @@ async function package() {
 
 // Issue(issueID, repoID, title, body, state)
 async function issue() {
-  target = await get(`https://api.github.com/repos/octocat/hello-world/issues`);
-  // console.log(target[0]);
   const db = [];
   for (const [owner, repo] of pairs) {
-    target = await get(`https://api.github.com/repos/${owner}/${repo}/issues`);
-    for (let j = 0; j < target.length; j++) {
-      const { id, repository_url, title, state } = target[j];
+    const target = await get(
+      `https://api.github.com/repos/${owner}/${repo}/issues`
+    );
+    for (const { id, repository_url, title, state } of target) {
       db.push(`${id},${repository_url},${title},${state}`);
     }
   }

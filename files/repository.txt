@@ -1,22 +1,22 @@
-74293321,svelte,Cybernetically enhanced web apps,https://api.github.com/repos/sveltejs/svelte,2826,57319,57319,695
-10270250,react,A declarative, efficient, and flexible JavaScript library for building user interfaces.,https://api.github.com/repos/facebook/react,38246,186196,186196,907
-24195339,angular,The modern web developer’s platform,https://api.github.com/repos/angular/angular,21281,80704,80704,1408
-11730342,vue,🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.,https://api.github.com/repos/vuejs/vue,31907,194886,194886,568
-70107786,next.js,The React Framework,https://api.github.com/repos/vercel/next.js,17841,85151,85151,1202
+74293321,svelte,Cybernetically enhanced web apps,https://api.github.com/repos/sveltejs/svelte,2827,57320,57320,695
+10270250,react,A declarative, efficient, and flexible JavaScript library for building user interfaces.,https://api.github.com/repos/facebook/react,38245,186199,186199,905
+24195339,angular,The modern web developer’s platform,https://api.github.com/repos/angular/angular,21281,80707,80707,1401
+11730342,vue,🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.,https://api.github.com/repos/vuejs/vue,31907,194887,194887,568
+70107786,next.js,The React Framework,https://api.github.com/repos/vercel/next.js,17845,85156,85156,1204
 71995937,nuxt.js,The Intuitive Vue(2) Framework,https://api.github.com/repos/nuxt/nuxt.js,3221,39804,39804,527
-6498492,javascript,JavaScript Style Guide,https://api.github.com/repos/airbnb/javascript,23272,121909,121909,134
-304344049,kit,The fastest way to build Svelte apps,https://api.github.com/repos/sveltejs/kit,699,7854,7854,408
-95797174,lit,Lit is a simple library for building fast, lightweight web components.,https://api.github.com/repos/lit/lit,570,10963,10963,260
+6498492,javascript,JavaScript Style Guide,https://api.github.com/repos/airbnb/javascript,23271,121910,121910,134
+304344049,kit,The fastest way to build Svelte apps,https://api.github.com/repos/sveltejs/kit,698,7854,7854,408
+95797174,lit,Lit is a simple library for building fast, lightweight web components.,https://api.github.com/repos/lit/lit,570,10962,10962,260
 46769790,solid,Solid - Re-decentralizing the web (project directory),https://api.github.com/repos/solid/solid,384,8110,8110,141
 17814354,mithril.js,A JavaScript Framework for Building Brilliant Applications,https://api.github.com/repos/MithrilJS/mithril.js,944,13173,13173,113
-224663696,alpine,A rugged, minimal framework for composing JavaScript behavior in your markup. ,https://api.github.com/repos/alpinejs/alpine,896,20352,20352,16
+224663696,alpine,A rugged, minimal framework for composing JavaScript behavior in your markup. ,https://api.github.com/repos/alpinejs/alpine,897,20352,20352,16
 27835638,framework,The Aurelia 1 framework entry point, bringing together all the required sub-modules of Aurelia.,https://api.github.com/repos/aurelia/framework,682,11690,11690,58
 952189,backbone,Give your JS App some Backbone with Models, Views, Collections, and Events,https://api.github.com/repos/jashkenas/backbone,5601,27866,27866,71
-1801829,ember.js,Ember.js - A JavaScript framework for creating ambitious web applications,https://api.github.com/repos/emberjs/ember.js,4277,22163,22163,429
+1801829,ember.js,Ember.js - A JavaScript framework for creating ambitious web applications,https://api.github.com/repos/emberjs/ember.js,4277,22164,22164,429
 3214406,meteor,Meteor, the JavaScript App Platform,https://api.github.com/repos/meteor/meteor,5196,42862,42862,123
 5245894,ractive,Next-generation DOM manipulation,https://api.github.com/repos/ractivejs/ractive,445,5876,5876,64
-11730342,vue,🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.,https://api.github.com/repos/vuejs/vue,31907,194886,194886,568
-74293321,svelte,Cybernetically enhanced web apps,https://api.github.com/repos/sveltejs/svelte,2826,57319,57319,695
+11730342,vue,🖖 Vue.js is a progressive, incrementally-adoptable JavaScript framework for building UI on the web.,https://api.github.com/repos/vuejs/vue,31907,194887,194887,568
+74293321,svelte,Cybernetically enhanced web apps,https://api.github.com/repos/sveltejs/svelte,2827,57320,57320,695
 757363,knockout,Knockout makes it easier to create rich, responsive UIs with JavaScript,https://api.github.com/repos/knockout/knockout,1570,10169,10169,368
 1540246,spine,Lightweight MVC library for building JavaScript applications,https://api.github.com/repos/spine/spine,448,3599,3599,37
 26181549,espresso.js,Super minimal MVC library,https://api.github.com/repos/akrymski/espresso.js,25,521,521,0
@@ -34,20 +34,20 @@
 23278776,awesome-derby,A collection of awesome derby components,https://api.github.com/repos/russll/awesome-derby,1,12,12,0
 22845841,way.js,Simple, lightweight, persistent two-way databinding,https://api.github.com/repos/gwendall/way.js,277,2894,2894,52
 31057802,jsblocks,Better MV-ish Framework,https://api.github.com/repos/astoilkov/jsblocks,111,2790,2790,14
-2609642,feathers,A framework for real-time applications and REST APIs with JavaScript and TypeScript,https://api.github.com/repos/feathersjs/feathers,664,13927,13927,109
+2609642,feathers,A framework for real-time applications and REST APIs with JavaScript and TypeScript,https://api.github.com/repos/feathersjs/feathers,664,13926,13926,109
 44556469,Keo,Plain functions for a more functional Deku approach to creating stateless React components, with functional goodies such as compose, memoize, etc... for free.,https://api.github.com/repos/Wildhoney/Keo,12,223,223,12
 50251053,atvjs,Blazing fast Apple TV application development using pure JavaScript,https://api.github.com/repos/emadalam/atvjs,45,280,280,20
-224663696,alpine,A rugged, minimal framework for composing JavaScript behavior in your markup. ,https://api.github.com/repos/alpinejs/alpine,896,20352,20352,16
+224663696,alpine,A rugged, minimal framework for composing JavaScript behavior in your markup. ,https://api.github.com/repos/alpinejs/alpine,897,20352,20352,16
 30161665,inferno,:fire: An extremely fast, React-like JavaScript library for building modern user interfaces,https://api.github.com/repos/infernojs/inferno,669,15347,15347,36
 289815239,lucia,🙋‍♀️ 3kb library for tiny web apps,https://api.github.com/repos/aidenybai/lucia,27,634,634,0
 40772809,core,🚀 The Node.js Framework highly focused on developer ergonomics, stability and confidence,https://api.github.com/repos/adonisjs/core,579,12313,12313,1
-50146229,grapesjs,Free and Open source Web Builder Framework. Next generation tool for building templates without coding,https://api.github.com/repos/artf/grapesjs,2965,15539,15539,75
-83434501,rete,JavaScript framework for visual programming and creating node editor #StandWithUkraine,https://api.github.com/repos/retejs/rete,502,7430,7430,87
+50146229,grapesjs,Free and Open source Web Builder Framework. Next generation tool for building templates without coding,https://api.github.com/repos/artf/grapesjs,2965,15542,15542,75
+83434501,rete,JavaScript framework for visual programming and creating node editor #StandWithUkraine,https://api.github.com/repos/retejs/rete,502,7431,7431,87
 13129587,litegraph.js,A graph node engine and editor written in Javascript similar to PD or UDK Blueprints, comes with its own editor in HTML5 Canvas2D. The engine can run client side or server side using Node. It allows to export graphs as JSONs to be included in applications independently.,https://api.github.com/repos/jagenjo/litegraph.js,356,2878,2878,51
 257674029,Drawflow,Simple flow library 🖥️🖱️,https://api.github.com/repos/jerosoler/Drawflow,346,1841,1841,39
 13872231,blockly,The web-based visual programming editor.,https://api.github.com/repos/google/blockly,3301,10163,10163,515
 372046384,million,Virtual DOM into the future! 💥🦁✨,https://api.github.com/repos/aidenybai/million,61,1907,1907,1
-9309093,Semantic-UI,Semantic is a UI component framework based around useful principles from natural language.,https://api.github.com/repos/Semantic-Org/Semantic-UI,5144,49957,49957,1056
+9309093,Semantic-UI,Semantic is a UI component framework based around useful principles from natural language.,https://api.github.com/repos/Semantic-Org/Semantic-UI,5144,49958,49958,1056
 1604375,w2ui,UI widgets for modern apps. Data table, forms, toolbars, sidebar, tabs, tooltips, popups. All under 120kb (gzipped).,https://api.github.com/repos/vitmalina/w2ui,655,1976,1976,264
 17703927,fluidity,The worlds smallest fully-responsive css framework,https://api.github.com/repos/mrmrs/fluidity,77,1099,1099,10
 2788082,Ink,An HTML5/CSS3 framework used at SAPO for fast and efficient website design and prototyping,https://api.github.com/repos/sapo/Ink,271,1912,1912,12
@@ -65,17 +65,17 @@
 26316966,cyclejs,A functional and reactive JavaScript framework for predictable code,https://api.github.com/repos/cyclejs/cyclejs,425,10081,10081,98
 186519945,concent,State management that tailored for react, it is simple, predictable, progressive and efficient.,https://api.github.com/repos/concentjs/concent,55,1079,1079,4
 21413198,immutable-js,Immutable persistent data collections for Javascript which increase efficiency and simplicity.,https://api.github.com/repos/immutable-js/immutable-js,1852,31896,31896,112
-4292299,mori,ClojureScript's persistent data structures and supporting API from the comfort of vanilla JavaScript,https://api.github.com/repos/swannodette/mori,154,3356,3356,63
+4292299,mori,ClojureScript's persistent data structures and supporting API from the comfort of vanilla JavaScript,https://api.github.com/repos/swannodette/mori,154,3357,3357,63
 3068532,Buckets-JS,A complete, fully tested and documented data structure library written in pure JavaScript.,https://api.github.com/repos/mauriciosantos/Buckets-JS,115,1190,1190,7
 3231063,hashmap,HashMap JavaScript class for Node.js and the browser. The keys can be anything and won't be stringified,https://api.github.com/repos/flesler/hashmap,73,373,373,2
 13723800,ngraph.graph,Graph data structure in JavaScript,https://api.github.com/repos/anvaka/ngraph.graph,56,365,365,7
-1424470,moment,Parse, validate, manipulate, and display dates in javascript.,https://api.github.com/repos/moment/moment,7065,46444,46444,203
+1424470,moment,Parse, validate, manipulate, and display dates in javascript.,https://api.github.com/repos/moment/moment,7065,46445,46445,203
 35219,jquery-timeago,:clock8: The original jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago").,https://api.github.com/repos/rmm5t/jquery-timeago,743,3815,3815,47
-10118353,date,Date() for humans,https://api.github.com/repos/matthewmueller/date,95,1464,1464,52
+10118353,date,Date() for humans,https://api.github.com/repos/matthewmueller/date,94,1464,1464,51
 24841635,date-fns,⏳ Modern JavaScript date utility library ⌛️,https://api.github.com/repos/date-fns/date-fns,1436,28469,28469,384
 35219,jquery-timeago,:clock8: The original jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago").,https://api.github.com/repos/rmm5t/jquery-timeago,743,3815,3815,47
-128907699,dayjs,⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API,https://api.github.com/repos/iamkun/dayjs,1941,38548,38548,464
-47118129,luxon,⏱ A library for working with dates and times in JS,https://api.github.com/repos/moment/luxon,598,12340,12340,99
+128907699,dayjs,⏰ Day.js 2kB immutable date-time library alternative to Moment.js with the same modern API,https://api.github.com/repos/iamkun/dayjs,1941,38550,38550,464
+47118129,luxon,⏱ A library for working with dates and times in JS,https://api.github.com/repos/moment/luxon,598,12341,12341,99
 11295981,countdown.js,Super simple countdowns.,https://api.github.com/repos/gumroad/countdown.js,29,392,392,3
 35219,jquery-timeago,:clock8: The original jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. "4 minutes ago").,https://api.github.com/repos/rmm5t/jquery-timeago,743,3815,3815,47
-243950408,HowToCook,程序员在家做饭方法指南。Programmer's guide about how to cook at home (Chinese only).,https://api.github.com/repos/Anduin2017/HowToCook,5553,37249,37249,266
+243950408,HowToCook,程序员在家做饭方法指南。Programmer's guide about how to cook at home (Chinese only).,https://api.github.com/repos/Anduin2017/HowToCook,5553,37253,37253,266

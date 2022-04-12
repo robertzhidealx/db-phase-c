@@ -157,7 +157,7 @@ issueCreator();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
-  const db = [];
+  let db = [];
   for (const org of singles) {
     const {
       id,
@@ -175,12 +175,13 @@ async function organization() {
       `${id},${login},${name},${description},${email},${created_at},${updated_at},${location},${type}`
     );
   }
+  db = [...new Set(db)];
   writeFile("files/organization.txt", db.join("\n"));
 }
 
 // Repository(repoID, name, description, url, forksCount, stargazersCount, watchersCount, openIssuesCount)
 async function repository() {
-  const db = [];
+  let db = [];
   for (const [owner, repo] of pairs) {
     const {
       id,
@@ -192,6 +193,7 @@ async function repository() {
       watchers_count,
       open_issues_count,
     } = await get(`https://api.github.com/repos/${owner}/${repo}`);
+    db = [...new Set(db)];
     db.push(
       `${id},${name},${description},${url},${forks_count},${stargazers_count},${watchers_count},${open_issues_count}`
     );
@@ -202,7 +204,7 @@ async function repository() {
 // do not call
 //User(userID, login, url, type)
 async function user() {
-  const db = [];
+  let db = [];
   for (const [owner] of pairs) {
     const { id, login, url, type } = await get(
       `https://api.github.com/users/${owner}`
@@ -215,13 +217,14 @@ async function user() {
   //   db.push(`${id},${login},${url},${type}`);
   // }
   // writeFile("files/user.txt", db.join("\n"));
+  db = [...new Set(db)];
   return db;
 }
 
 // Package (packageName, stars, version, latestUpdated, latestCreated, size, packageHtmlUrl)
 async function package() {
-  const package = [];
-  const hasPackage = [];
+  let package = [];
+  let hasPackage = [];
   for (const [owner, repo] of pairs) {
     const { id } = await get(`https://api.github.com/orgs/${owner}`);
     if (!id) continue;
@@ -234,13 +237,15 @@ async function package() {
     hasPackage.push(`${id},'${name}',`);
     package.push(`'${name}','${version}',${star},${score},`);
   }
+  package = [...new Set(package)];
+  hasPackage = [...new Set(hasPackage)];
   writeFile("files/package.txt", package.join("\n"));
   writeFile("files/hasPackage.txt", hasPackage.join("\n"));
 }
 
 // Issue(issueID, repoID, title, body, state)
 async function issue() {
-  const db = [];
+  let db = [];
   for (const [owner, repo] of pairs) {
     const target = await get(
       `https://api.github.com/repos/${owner}/${repo}/issues`
@@ -249,12 +254,13 @@ async function issue() {
       db.push(`${id},${repository_url},${title},${state}`);
     }
   }
+  db = [...new Set(db)];
   writeFile("files/issue.txt", db.join("\n"));
 }
 
 // Commit(commitID, repoID, author, committer, commentCount, isVerified)
 async function commit() {
-  const db = [];
+  let db = [];
   for (const [owner, repo] of pairs) {
     const { id: repoId } = await get(
       `https://api.github.com/repos/${owner}/${repo}`
@@ -274,13 +280,14 @@ async function commit() {
       );
     }
   }
+  db = [...new Set(db)];
   writeFile("files/commit.txt", db.join("\n"));
 }
 
 // * CAUTION: very slow fetch
 // CommitStats(commitID, additions, deletions, total)
 async function commitStats() {
-  const db = [];
+  let db = [];
   for (const [owner, repo] of pairs) {
     const commits = await get(
       `https://api.github.com/repos/${owner}/${repo}/commits`
@@ -295,12 +302,13 @@ async function commitStats() {
       );
     }
   }
+  db = [...new Set(db)];
   writeFile("files/commitStats.txt", db.join("\n"));
 }
 
 // Downloads(packageName, startDate, endDate, downloadsCount)
 async function downloads() {
-  const db = [];
+  let db = [];
   for (const pkg of singles) {
     const { package, start, end, downloads } = await get(
       `https://api.npmjs.org/downloads/point/2020-07-01:2022-01-01/${pkg}`,
@@ -309,12 +317,13 @@ async function downloads() {
     if (!package) continue;
     db.push(`${package},${start},${end},${downloads}`);
   }
+  db = [...new Set(db)];
   writeFile("files/downloads.txt", db.join("\n"));
 }
 
 // DownloadsOnDate(packageName, day, downloads)
 async function downloadsOnDate() {
-  const db = [];
+  let db = [];
   for (const pkg of singles) {
     const { package, downloads: days } = await get(
       `https://api.npmjs.org/downloads/range/2020-10-01:2022-01-01/${pkg}`,
@@ -325,6 +334,7 @@ async function downloadsOnDate() {
       db.push(`${package},${day},${downloads}`);
     }
   }
+  db = [...new Set(db)];
   writeFile("files/downloadsOnDate.txt", db.join("\n"));
 }
 // InOrg(userID, orgID)
@@ -333,7 +343,7 @@ async function InOrg() {}
 
 // OwnsRepo(repoID, userID)
 async function OwnsRepo() {
-  const db = [];
+  let db = [];
   for (const [owner, repo] of pairs) {
     const { id: repoId } = await get(
       `https://api.github.com/repos/${owner}/${repo}`
@@ -341,12 +351,13 @@ async function OwnsRepo() {
     const { id: userId } = await get(`https://api.github.com/users/${owner}`);
     db.push(`${repoId},${userId},`);
   }
+  db = [...new Set(db)];
   writeFile("files/ownsRepo.txt", db.join("\n"));
 }
 
 // IssueCreator(issueID, creatorID, creatorLogin)
 async function issueCreator() {
-  const db = [];
+  let db = [];
   let userArr = await user();
   for (const [owner, repo] of pairs) {
     const res = await get(
@@ -357,6 +368,7 @@ async function issueCreator() {
       userArr.push(`${user.id},${user.login},${user.url},${user.type},`);
     }
   }
+  db = [...new Set(db)];
   writeFile("files/issueCreator.txt", db.join("\n"));
   userArr = [...new Set(userArr)];
   writeFile("files/user.txt", userArr.join("\n"));

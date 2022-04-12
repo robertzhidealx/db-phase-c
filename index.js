@@ -150,7 +150,6 @@ const singles = [
 // commitStats();
 // downloads();
 // downloadsOnDate();
-// user();
 // issue();
 issueCreator();
 // package();
@@ -200,6 +199,7 @@ async function repository() {
   writeFile("files/repository.txt", db.join("\n"));
 }
 
+// do not call
 //User(userID, login, url, type)
 async function user() {
   const db = [];
@@ -214,7 +214,8 @@ async function user() {
   //   const { id, login, url, type } = users[i];
   //   db.push(`${id},${login},${url},${type}`);
   // }
-  writeFile("files/user.txt", db.join("\n"));
+  // writeFile("files/user.txt", db.join("\n"));
+  return db;
 }
 
 // Package (packageName, stars, version, latestUpdated, latestCreated, size, packageHtmlUrl)
@@ -331,7 +332,6 @@ async function downloadsOnDate() {
 async function InOrg() {}
 
 // OwnsRepo(repoID, userID)
-// Robert
 async function OwnsRepo() {
   const db = [];
   for (const [owner, repo] of pairs) {
@@ -347,20 +347,19 @@ async function OwnsRepo() {
 // IssueCreator(issueID, creatorID, creatorLogin)
 async function issueCreator() {
   const db = [];
-  user();
+  let userArr = await user();
   for (const [owner, repo] of pairs) {
     const res = await get(
       `https://api.github.com/repos/${owner}/${repo}/issues`
     );
     for (const { id, user } of res) {
       db.push(`${id},${user.id},${user.login},`);
-      appendFile(
-        "files/user.txt",
-        `${user.id},${user.login},${user.url},${user.type},\n`
-      );
+      userArr.push(`${user.id},${user.login},${user.url},${user.type},`);
     }
   }
   writeFile("files/issueCreator.txt", db.join("\n"));
+  userArr = [...new Set(userArr)];
+  writeFile("files/user.txt", userArr.join("\n"));
 }
 
 function get(url, withAuth = true) {

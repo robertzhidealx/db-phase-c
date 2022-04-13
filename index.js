@@ -151,7 +151,7 @@ const singles = [
 // downloads();
 // downloadsOnDate();
 // issue();
-// package();
+package();
 // ownsRepo();
 // inOrg();
 
@@ -238,8 +238,8 @@ async function package() {
     const version = pkgRes.collected.metadata.version;
     const star = pkgRes.collected.npm.starsCount;
     const score = pkgRes.score.final;
-    hasPackage.push(`${r(id)},'${r(name)}'`);
-    package.push(`'${r(name)}','${r(version)}',${r(star)},${r(score)}`);
+    hasPackage.push(`${r(id)},${r(name)}`);
+    package.push(`${r(name)},${r(version)},${r(star)},${r(score)}`);
   }
   package = [...new Set(package)];
   hasPackage = [...new Set(hasPackage)];

@@ -147,14 +147,14 @@ const singles = [
 // organization();
 // repository();
 // commit();
-commitStats();
+//commitStats();
 // downloads();
 // downloadsOnDate();
 // issue();
 // package();
 // OwnsRepo();
-// InOrg();
-
+ InOrg();
+ //issueCreator();
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
   let db = [];
@@ -243,7 +243,7 @@ async function package() {
   writeFile("files/hasPackage.txt", hasPackage.join("\n"));
 }
 
-// Issue(issueID, repoID, title, body, state)
+// Issue(issueID, repoURL, title, state)
 async function issue() {
   let db = [];
   for (const [owner, repo] of pairs) {
@@ -347,7 +347,7 @@ async function InOrg() {
     if (!list) continue;
     for (const user of Array.from(list)) {
       db.push(`${user.id},${id},`);
-      userArr.push(`${user.id},${user.login},${user.url},${user.type},`);
+      userArr.push(`${user.id},${user.login},${user.url},${user.type}`);
     }
   }
   db = [...new Set(db)];
@@ -382,7 +382,7 @@ async function issueCreator() {
     if (!res) continue;
     for (const { id, user } of Array.from(res)) {
       db.push(`${id},${user.id},${user.login},`);
-      userArr.push(`${user.id},${user.login},${user.url},${user.type},`);
+      userArr.push(`${user.id},${user.login},${user.url},${user.type}`);
     }
   }
   db = [...new Set(db)];

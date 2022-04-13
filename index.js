@@ -147,13 +147,13 @@ const singles = [
 // organization();
 // repository();
 // commit();
-commitStats();
+// commitStats();
 // downloads();
 // downloadsOnDate();
 // issue();
-// package();
-// OwnsRepo();
-// InOrg();
+package();
+ownsRepo();
+inOrg();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -234,8 +234,8 @@ async function package() {
     const version = pkgRes.collected.metadata.version;
     const star = pkgRes.collected.npm.starsCount;
     const score = pkgRes.score.final;
-    hasPackage.push(`${id},'${name}',`);
-    package.push(`'${name}','${version}',${star},${score},`);
+    hasPackage.push(`${id},'${name}'`);
+    package.push(`'${name}','${version}',${star},${score}`);
   }
   package = [...new Set(package)];
   hasPackage = [...new Set(hasPackage)];
@@ -338,7 +338,7 @@ async function downloadsOnDate() {
   writeFile("files/downloadsOnDate.txt", db.join("\n"));
 }
 // InOrg(userID, orgID)
-async function InOrg() {
+async function inOrg() {
   let db = [];
   let userArr = await issueCreator();
   for (const owner of singles) {
@@ -346,8 +346,8 @@ async function InOrg() {
     let list = await get(`https://api.github.com/orgs/${owner}/members`);
     if (!list) continue;
     for (const user of Array.from(list)) {
-      db.push(`${user.id},${id},`);
-      userArr.push(`${user.id},${user.login},${user.url},${user.type},`);
+      db.push(`${user.id},${id}`);
+      userArr.push(`${user.id},${user.login},${user.url},${user.type}`);
     }
   }
   db = [...new Set(db)];
@@ -357,14 +357,14 @@ async function InOrg() {
 }
 
 // OwnsRepo(repoID, userID)
-async function OwnsRepo() {
+async function ownsRepo() {
   let db = [];
   for (const [owner, repo] of pairs) {
     const { id: repoId } = await get(
       `https://api.github.com/repos/${owner}/${repo}`
     );
     const { id: userId } = await get(`https://api.github.com/users/${owner}`);
-    db.push(`${repoId},${userId},`);
+    db.push(`${repoId},${userId}`);
   }
   db = [...new Set(db)];
   writeFile("files/ownsRepo.txt", db.join("\n"));
@@ -381,8 +381,8 @@ async function issueCreator() {
     );
     if (!res) continue;
     for (const { id, user } of Array.from(res)) {
-      db.push(`${id},${user.id},${user.login},`);
-      userArr.push(`${user.id},${user.login},${user.url},${user.type},`);
+      db.push(`${id},${user.id},${user.login}`);
+      userArr.push(`${user.id},${user.login},${user.url},${user.type}`);
     }
   }
   db = [...new Set(db)];

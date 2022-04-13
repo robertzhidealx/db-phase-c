@@ -172,7 +172,9 @@ async function organization() {
     } = await get(`https://api.github.com/orgs/${org}`);
     if (!id) continue;
     db.push(
-      `${id},${login},${name},${description},${email},${created_at},${updated_at},${location},${type}`
+      `${r(id)},${r(login)},${r(name)},${r(description)},${r(email)},${r(
+        created_at
+      )},${r(updated_at)},${r(location)},${r(type)}`
     );
   }
   db = [...new Set(db)];
@@ -195,7 +197,9 @@ async function repository() {
     } = await get(`https://api.github.com/repos/${owner}/${repo}`);
     db = [...new Set(db)];
     db.push(
-      `${id},${name},${description},${url},${forks_count},${stargazers_count},${watchers_count},${open_issues_count}`
+      `${r(id)},${r(name)},${r(description)},${r(url)},${r(forks_count)},${r(
+        stargazers_count
+      )},${r(watchers_count)},${r(open_issues_count)}`
     );
   }
   writeFile("files/repository.txt", db.join("\n"));
@@ -209,7 +213,7 @@ async function user() {
     const { id, login, url, type } = await get(
       `https://api.github.com/users/${owner}`
     );
-    db.push(`${id},${login},${url},${type}`);
+    db.push(`${r(id)},${r(login)},${r(url)},${r(type)}`);
   }
   // const users = await get(`https://api.github.com/users`);
   // for (let i = 0; i < 30; i++) {
@@ -234,8 +238,8 @@ async function package() {
     const version = pkgRes.collected.metadata.version;
     const star = pkgRes.collected.npm.starsCount;
     const score = pkgRes.score.final;
-    hasPackage.push(`${id},'${name}'`);
-    package.push(`'${name}','${version}',${star},${score}`);
+    hasPackage.push(`${r(id)},'${r(name)}'`);
+    package.push(`'${r(name)}','${r(version)}',${r(star)},${r(score)}`);
   }
   package = [...new Set(package)];
   hasPackage = [...new Set(hasPackage)];
@@ -251,7 +255,7 @@ async function issue() {
       `https://api.github.com/repos/${owner}/${repo}/issues`
     );
     for (const { id, repository_url, title, state } of target) {
-      db.push(`${id},${repository_url},${title},${state}`);
+      db.push(`${r(id)},${r(repository_url)},${r(title)},${r(state)}`);
     }
   }
   db = [...new Set(db)];
@@ -274,9 +278,11 @@ async function commit() {
       commit: commitObj,
     } of commits) {
       db.push(
-        `${commitId},${repoId},${authorObj ? authorObj.login : null},${
-          commitObj.committer.name
-        },${commitObj.comment_count},${commitObj.verification.verified}`
+        `${r(commitId)},${r(repoId)},${
+          authorObj ? r(authorObj.login) : null
+        },${r(commitObj.committer.name)},${r(commitObj.comment_count)},${r(
+          commitObj.verification.verified
+        )}`
       );
     }
   }
@@ -298,7 +304,9 @@ async function commitStats() {
       );
       if (!statsObj) continue;
       db.push(
-        `${commitId},${statsObj.additions},${statsObj.deletions},${statsObj.total}`
+        `${r(commitId)},${r(statsObj.additions)},${r(statsObj.deletions)},${r(
+          statsObj.total
+        )}`
       );
     }
   }
@@ -315,7 +323,7 @@ async function downloads() {
       false
     );
     if (!package) continue;
-    db.push(`${package},${start},${end},${downloads}`);
+    db.push(`${r(package)},${r(start)},${r(end)},${r(downloads)}`);
   }
   db = [...new Set(db)];
   writeFile("files/downloads.txt", db.join("\n"));
@@ -331,7 +339,7 @@ async function downloadsOnDate() {
     );
     if (!days) continue;
     for (const { day, downloads } of days) {
-      db.push(`${package},${day},${downloads}`);
+      db.push(`${r(package)},${r(day)},${r(downloads)}`);
     }
   }
   db = [...new Set(db)];
@@ -346,8 +354,10 @@ async function inOrg() {
     let list = await get(`https://api.github.com/orgs/${owner}/members`);
     if (!list) continue;
     for (const user of Array.from(list)) {
-      db.push(`${user.id},${id}`);
-      userArr.push(`${user.id},${user.login},${user.url},${user.type}`);
+      db.push(`${r(user.id)},${r(id)}`);
+      userArr.push(
+        `${r(user.id)},${r(user.login)},${r(user.url)},${r(user.type)}`
+      );
     }
   }
   db = [...new Set(db)];
@@ -364,7 +374,7 @@ async function ownsRepo() {
       `https://api.github.com/repos/${owner}/${repo}`
     );
     const { id: userId } = await get(`https://api.github.com/users/${owner}`);
-    db.push(`${repoId},${userId}`);
+    db.push(`${r(repoId)},${r(userId)}`);
   }
   db = [...new Set(db)];
   writeFile("files/ownsRepo.txt", db.join("\n"));
@@ -381,8 +391,10 @@ async function issueCreator() {
     );
     if (!res) continue;
     for (const { id, user } of Array.from(res)) {
-      db.push(`${id},${user.id},${user.login}`);
-      userArr.push(`${user.id},${user.login},${user.url},${user.type}`);
+      db.push(`${r(id)},${r(user.id)},${r(user.login)}`);
+      userArr.push(
+        `${r(user.id)},${r(user.login)},${r(user.url)},${r(user.type)}`
+      );
     }
   }
   db = [...new Set(db)];
@@ -421,3 +433,9 @@ function appendFile(fileName, content) {
     }
   });
 }
+
+function r(s) {
+  if (typeof s !== "string") return s;
+  return s.replace(/[,]|[^a-zA-Z0-9\s(){}|\/\\;.\-_]/g, "");
+}
+// console.log("!?.，".replace(/[,]|[^a-zA-Z0-9\s(){}|\/\\;.\-_?!]/g, ""));

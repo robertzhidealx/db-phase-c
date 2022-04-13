@@ -28,6 +28,36 @@
 1169834243,https://api.github.com/repos/octocat/Hello-World,saying Hello from -TM,open
 1169162442,https://api.github.com/repos/octocat/Hello-World,How do I get the codes?,open
 1168443967,https://api.github.com/repos/octocat/Hello-World,Demo1,open
+1202000581,https://api.github.com/repos/Anduin2017/HowToCook,高级技巧里怎么能少了和面呢?,open
+1199915398,https://api.github.com/repos/Anduin2017/HowToCook,锅包肉的肉片厚度没有准确描述,open
+1199744833,https://api.github.com/repos/Anduin2017/HowToCook,"电饭煲蒸米饭" 中的米量，是不是用g更合适？,open
+1199072105,https://api.github.com/repos/Anduin2017/HowToCook,我不会用GITHUB提交... 提交了5次了都被自动拒绝...,open
+1199071037,https://api.github.com/repos/Anduin2017/HowToCook,新增 牛油火锅底料(重庆)的做法,open
+1198550571,https://api.github.com/repos/Anduin2017/HowToCook,有没有干锅千叶豆腐 客家酿豆腐 鲫鱼豆腐汤 佛跳墙,open
+1198089478,https://api.github.com/repos/Anduin2017/HowToCook,增加对于食用油的种类决策的方法,open
+1195547045,https://api.github.com/repos/Anduin2017/HowToCook,红烧肉不放糖会怎么样？,open
+1195470373,https://api.github.com/repos/Anduin2017/HowToCook,求：玉米排骨汤,open
+1195357508,https://api.github.com/repos/Anduin2017/HowToCook,传统回锅肉要放甜面酱,open
+1194828496,https://api.github.com/repos/Anduin2017/HowToCook,求：蛋黄鸡翅做法,open
+1194558855,https://api.github.com/repos/Anduin2017/HowToCook,概念混淆：腌渍与腌制,open
+1194382411,https://api.github.com/repos/Anduin2017/HowToCook,提拉米苏教程中朗姆酒数值不精准,open
+1194188552,https://api.github.com/repos/Anduin2017/HowToCook,建议增加米、面、面粉选购指南,open
+1193948101,https://api.github.com/repos/Anduin2017/HowToCook,有茄子汤的做法嘛,open
+1193944524,https://api.github.com/repos/Anduin2017/HowToCook,关于辣椒炒xx的一些求助,open
+1193052109,https://api.github.com/repos/Anduin2017/HowToCook,好像没有酸菜鱼,open
+1191975899,https://api.github.com/repos/Anduin2017/HowToCook,常用的调味品推荐,open
+1191742328,https://api.github.com/repos/Anduin2017/HowToCook,可以来一些减脂餐吗？,open
+1187676800,https://api.github.com/repos/Anduin2017/HowToCook,建议增加空气炸锅的各类菜谱制作方式,open
+1187542097,https://api.github.com/repos/Anduin2017/HowToCook,Submit cuisine,open
+1187392802,https://api.github.com/repos/Anduin2017/HowToCook,口水鸡的最后红油调料比例没写呀,open
+1184967306,https://api.github.com/repos/Anduin2017/HowToCook,金针菇豆腐煲,open
+1184088741,https://api.github.com/repos/Anduin2017/HowToCook,原料用量的人数scalar不应该是线性的,open
+1183378112,https://api.github.com/repos/Anduin2017/HowToCook,Update 炒滑蛋.md,open
+1182954399,https://api.github.com/repos/Anduin2017/HowToCook,如何避免菜炒咸了,open
+1182883898,https://api.github.com/repos/Anduin2017/HowToCook,咕噜肉生粉分量不明确,open
+1181473340,https://api.github.com/repos/Anduin2017/HowToCook,你们喜欢甜的西红柿炒鸡蛋还是咸的,open
+1181469374,https://api.github.com/repos/Anduin2017/HowToCook,炒完菜后发现盐多了，或者其他口味重了，那是debug，还是推了重做？,open
+1181460292,https://api.github.com/repos/Anduin2017/HowToCook,你们忘了饥荒了吗？用lua写，配个高级炖锅,open
 1201651178,https://api.github.com/repos/sveltejs/svelte,falsy style props behave inconsistently,open
 1200121174,https://api.github.com/repos/sveltejs/svelte,Scoped styles for <svelte:element>,open
 1199807223,https://api.github.com/repos/sveltejs/svelte,conditional ActionReturn type if Parameter is void,open
@@ -58,8 +88,9 @@
 1167166428,https://api.github.com/repos/sveltejs/svelte,Discrepancy of `<select value>` from `<option selected>`,open
 1165818005,https://api.github.com/repos/sveltejs/svelte,[fix] Export types needed for defining custom stores,open
 1164769953,https://api.github.com/repos/sveltejs/svelte,[docs] Fix statement about the order of bind: and on:,open
-1202303895,https://api.github.com/repos/facebook/react,[DevTools] Add Gating for DevTools tests on React Versions,open
-1202257699,https://api.github.com/repos/facebook/react,Bug: URIError: Failed to decode param '//%PUBLIC_URL%/favicon.ico',open
+1202504418,https://api.github.com/repos/facebook/react,Bump urijs from 1.19.0 to 1.19.11 in /fixtures/expiration,open
+1202504303,https://api.github.com/repos/facebook/react,Bump urijs from 1.18.12 to 1.19.11 in /fixtures/attribute-behavior,open
+1202503287,https://api.github.com/repos/facebook/react,Bump urijs from 1.19.2 to 1.19.11 in /fixtures/dom,open
 1201943496,https://api.github.com/repos/facebook/react,[eslint-plugin-react-hooks] exhaustive-deps incorrect handling of ...rest params in dependency lists,open
 1201826579,https://api.github.com/repos/facebook/react,Warn for duplicate DevTools installations ,open
 1201335415,https://api.github.com/repos/facebook/react,Compatible issue about createRoot between 17 & 18,open
@@ -87,11 +118,12 @@
 1184239460,https://api.github.com/repos/facebook/react,Bug: Elements in a list incorrectly receive hover state when a sibling is removed as result of a touch event,open
 1183111823,https://api.github.com/repos/facebook/react,Standalone react-devtools: select component instances in iframe,open
 1182929870,https://api.github.com/repos/facebook/react,Fix some JSDoc issue on `react` package,open
-1182601442,https://api.github.com/repos/facebook/react,Fix ReactAct `flushActQueue` error handler,open
+1202620321,https://api.github.com/repos/angular/angular,Trying to help PR https://github.com/angular/angular/pull/45559 pls ignore,open
+1202499561,https://api.github.com/repos/angular/angular,Resolve issues and update a11y tests,open
+1202480991,https://api.github.com/repos/angular/angular,feat(forms): Add a `FormRecord` type.,open
+1202473335,https://api.github.com/repos/angular/angular,refactor(compiler): add `original_code` to `goog.getMsg()` options,open
 1202072340,https://api.github.com/repos/angular/angular,fix(language-service): Add resource files as roots to their associate…,open
 1201940557,https://api.github.com/repos/angular/angular,How to stop downloading service worker cached resources on each & every page reload in Angular?,open
-1201351911,https://api.github.com/repos/angular/angular,refactor(core): remove duplicated code in change_detection_util,open
-1201104225,https://api.github.com/repos/angular/angular,build: update dependency glob to v8,open
 1201051307,https://api.github.com/repos/angular/angular,refactor(router): deprecate no longer needed `resolver` fields,open
 1200677515,https://api.github.com/repos/angular/angular,Refactor some router internals,open
 1200573448,https://api.github.com/repos/angular/angular,build(bazel): generate aio stackblitz and example zips,open
@@ -101,7 +133,6 @@
 1198752717,https://api.github.com/repos/angular/angular,feat(docs-infra): add close button to search-results aio panel,open
 1198737140,https://api.github.com/repos/angular/angular,Duplicated code in Change_detection_util.ts  ,open
 1198717842,https://api.github.com/repos/angular/angular,Calling ChangeDetectorRef.detectChanges in child view causes error in parent NgForOf directive,open
-1198716197,https://api.github.com/repos/angular/angular,docs: add powershell execution policies note,open
 1198634785,https://api.github.com/repos/angular/angular,fix(compiler): avoid errors with extremely long instruction chains,open
 1198605454,https://api.github.com/repos/angular/angular,Change Detection keeps running when the application listens to  "message" event when DevTools is loaded,open
 1197182504,https://api.github.com/repos/angular/angular,Maximum call stack size exceeded with large SVG,open
@@ -117,7 +148,6 @@
 1194419683,https://api.github.com/repos/angular/angular,Fix : code style for product-details & cart components,open
 1194339791,https://api.github.com/repos/angular/angular,Angular.io website is not GDPR compliant,open
 1194048775,https://api.github.com/repos/angular/angular,wrong punctuation in angular doc,open
-1193848682,https://api.github.com/repos/angular/angular,Text interpolation update,open
 1198966452,https://api.github.com/repos/vuejs/vue,Merge the code of the event modifier,open
 1188208649,https://api.github.com/repos/vuejs/vue,fix Module Federation & Vue 2 SSR: support async initialization #12511,open
 1187844300,https://api.github.com/repos/vuejs/vue,Module Federation & Vue 2 SSR: support async initialization,open
@@ -148,6 +178,9 @@
 1090055682,https://api.github.com/repos/vuejs/vue,ci: Update CircleCI pipeline to run Codecov,open
 1084482504,https://api.github.com/repos/vuejs/vue,feat(types): add types for hook events,open
 1071501898,https://api.github.com/repos/vuejs/vue,fix #12374: do not hyphenate or omit CSS variables in style attribute,open
+1202541279,https://api.github.com/repos/vercel/next.js,Add experimental ifGenereated flag for unstable_revalidate,open
+1202473718,https://api.github.com/repos/vercel/next.js,Docs: no-cache: Add guide for DigitalOcean,open
+1202328989,https://api.github.com/repos/vercel/next.js,Duplicate "amp-custom" style tag on AMP pages,open
 1202262904,https://api.github.com/repos/vercel/next.js,rsc: remove router injection,open
 1202242333,https://api.github.com/repos/vercel/next.js,_middleware that redirects to a different i18n locale can cause next.js router to enter an infinite loop,open
 1201625558,https://api.github.com/repos/vercel/next.js,Failed to revalidate route of a specific locale,open
@@ -175,9 +208,6 @@
 1196976959,https://api.github.com/repos/vercel/next.js,SWC + styled-components: element classes & style classes are not synched,open
 1196909389,https://api.github.com/repos/vercel/next.js,Image Optimizer - upstream max-age regression,open
 1196898518,https://api.github.com/repos/vercel/next.js,issue with import dynamic ,open
-1196809407,https://api.github.com/repos/vercel/next.js,Ordering of request query being changed in production,open
-1196760568,https://api.github.com/repos/vercel/next.js,examples: add Hasura,open
-1196516049,https://api.github.com/repos/vercel/next.js,Support Postcss plugin - postcss-each v1.1.0,open
 1201796746,https://api.github.com/repos/nuxt/nuxt.js,Scrolling behaviour in Firefox,open
 1199966792,https://api.github.com/repos/nuxt/nuxt.js,SSG: Invalid route items cause broken static assets (e.g. `state.js`) for base route `/`,open
 1196968401,https://api.github.com/repos/nuxt/nuxt.js,nuxt.js generate Bug,open
@@ -242,6 +272,7 @@
 741405770,https://api.github.com/repos/airbnb/javascript,Should 'react/react-in-jsx-scope' be disabled by default if the new JSX transform is used.,open
 714358269,https://api.github.com/repos/airbnb/javascript,JSX is not displayed correctly in webpage,open
 685682228,https://api.github.com/repos/airbnb/javascript,📝 [REPO]: Added CONTRIBUTING.md with contribution guidelines to the r…,open
+1202470472,https://api.github.com/repos/sveltejs/kit,Version Packages (next),open
 1202271527,https://api.github.com/repos/sveltejs/kit,Add platform to root relative requests,open
 1202118692,https://api.github.com/repos/sveltejs/kit,Cannot read property 'split' of undefined - Netlify adapter,open
 1201919033,https://api.github.com/repos/sveltejs/kit,start.js: Unhandled Promise Rejection: SyntaxError: Invalid regular expression: invalid group specifier name,open
@@ -271,7 +302,6 @@
 1192422278,https://api.github.com/repos/sveltejs/kit,feat: Merge ErrorLoad and Load, make Input and Output typings public,open
 1192358034,https://api.github.com/repos/sveltejs/kit,Error when using `Vite`'s native WebAssebmly imports,open
 1192144132,https://api.github.com/repos/sveltejs/kit,Hydration bug with browser extensions,open
-1191427667,https://api.github.com/repos/sveltejs/kit,Cannot use import statement outside a module,open
 1202221635,https://api.github.com/repos/lit/lit,Convert Lit monorepo to Wireit,open
 1200870910,https://api.github.com/repos/lit/lit,[ReactiveElement] Consider adding `beforeUpdate`/`hostBeforeUpdate` lifecycle callback,open
 1200851905,https://api.github.com/repos/lit/lit,[ReactiveElement] exposes `changedProperties`,open
@@ -528,66 +558,6 @@
 331745547,https://api.github.com/repos/ractivejs/ractive,Add compare key to computed using accessor syntax,open
 321240380,https://api.github.com/repos/ractivejs/ractive,Linked values are not properly data-bound in components,open
 317165673,https://api.github.com/repos/ractivejs/ractive,Ractive examples,open
-1198966452,https://api.github.com/repos/vuejs/vue,Merge the code of the event modifier,open
-1188208649,https://api.github.com/repos/vuejs/vue,fix Module Federation & Vue 2 SSR: support async initialization #12511,open
-1187844300,https://api.github.com/repos/vuejs/vue,Module Federation & Vue 2 SSR: support async initialization,open
-1178389839,https://api.github.com/repos/vuejs/vue,Allow inferring types from Vue.set(object, ...) pattern,open
-1172301287,https://api.github.com/repos/vuejs/vue,chore: Improve npm package specification,open
-1162435226,https://api.github.com/repos/vuejs/vue,The latest progress of Vue 2.7 and the REAL approximate release time,open
-1161789738,https://api.github.com/repos/vuejs/vue,types(compiler): add missing start/end fields,open
-1156357011,https://api.github.com/repos/vuejs/vue,build(deps-dev): bump karma from 3.1.4 to 6.3.16,open
-1155662580,https://api.github.com/repos/vuejs/vue,serverPrefetch's `this` type doesn't include component properties,open
-1155278208,https://api.github.com/repos/vuejs/vue,chore: fix typos [skip ci],open
-1154767703,https://api.github.com/repos/vuejs/vue,fix(compiler):  codeframe infinite loop,open
-1150043411,https://api.github.com/repos/vuejs/vue,fix(compiler): add missing code range on warn,open
-1147231999,https://api.github.com/repos/vuejs/vue,build(deps): bump trim-off-newlines from 1.0.1 to 1.0.3,open
-1145021945,https://api.github.com/repos/vuejs/vue,fix keep-alive pruneCache not work in some max values,open
-1141522120,https://api.github.com/repos/vuejs/vue,use vite with vue2 on ssr,  dynamic import cause Cannot add property _Ctor, object is not extensible,open
-1133959473,https://api.github.com/repos/vuejs/vue,build(deps): bump follow-redirects from 1.14.7 to 1.14.8,open
-1129544390,https://api.github.com/repos/vuejs/vue,chore: fix license link,open
-1128092953,https://api.github.com/repos/vuejs/vue,HMR is not working,open
-1122669159,https://api.github.com/repos/vuejs/vue,fix(core): add prop name to invalid prop type warning message (fix #12454),open
-1121557049,https://api.github.com/repos/vuejs/vue,Property validator should report the property that failed type / validator check,open
-1111605222,https://api.github.com/repos/vuejs/vue,fix(ssr): fix compatibility with webpack@4 and webpack@5 for monorepos,open
-1108113706,https://api.github.com/repos/vuejs/vue,`this` type inference doesnt work in `data` method,open
-1108070765,https://api.github.com/repos/vuejs/vue,Vue SSR did not inject the extracted CSS file,open
-1104378447,https://api.github.com/repos/vuejs/vue,build(deps-dev): bump shelljs from 0.8.3 to 0.8.5,open
-1104175580,https://api.github.com/repos/vuejs/vue,docs(readme & backers): HTTP => HTTPS,open
-1099968402,https://api.github.com/repos/vuejs/vue,refactor(observer): avoid eager new Dep(),open
-1097083572,https://api.github.com/repos/vuejs/vue,Chore: fixed punctuation errors,open
-1090055682,https://api.github.com/repos/vuejs/vue,ci: Update CircleCI pipeline to run Codecov,open
-1084482504,https://api.github.com/repos/vuejs/vue,feat(types): add types for hook events,open
-1071501898,https://api.github.com/repos/vuejs/vue,fix #12374: do not hyphenate or omit CSS variables in style attribute,open
-1201651178,https://api.github.com/repos/sveltejs/svelte,falsy style props behave inconsistently,open
-1200121174,https://api.github.com/repos/sveltejs/svelte,Scoped styles for <svelte:element>,open
-1199807223,https://api.github.com/repos/sveltejs/svelte,conditional ActionReturn type if Parameter is void,open
-1200184755,https://api.github.com/repos/sveltejs/svelte,`@html` content in `<svelte:head>` is duplicated,open
-1199369379,https://api.github.com/repos/sveltejs/svelte,Minimize the code generated for setting scoped classes,open
-1199008953,https://api.github.com/repos/sveltejs/svelte,Slotted content less reactive when referencing external slot props in event handler,open
-1197753714,https://api.github.com/repos/sveltejs/svelte,Feature Suggestion: Improve versatility of `<svelte:component>` and `<svelte:element>` by treating them as a `<svelte:fragment>` when the `this` prop value is present but is a falsy or nullish value,open
-1196299506,https://api.github.com/repos/sveltejs/svelte,A component wrapping a custom element is not rendered into a slot correctly,open
-1196040822,https://api.github.com/repos/sveltejs/svelte,[feat] claim static html elements using innerHTML instead of deopt to claiming every nodes,open
-1195792831,https://api.github.com/repos/sveltejs/svelte,Allow `#each` block to handle arbitrary non array like iterables,open
-1195355843,https://api.github.com/repos/sveltejs/svelte,Bind to text nodes,open
-1190298532,https://api.github.com/repos/sveltejs/svelte,Hydration Attributes,open
-1187743467,https://api.github.com/repos/sveltejs/svelte,Unexpected behavior using spread attributes.,open
-1186904695,https://api.github.com/repos/sveltejs/svelte,Selector Lists Break `:global` When Attributes Are Targeted (`3.46.5`),open
-1185636300,https://api.github.com/repos/sveltejs/svelte,Media element's `buffered` binding doesn't update frequently enough to match native `TimeRange` object,open
-1185380767,https://api.github.com/repos/sveltejs/svelte,Access target/anchor properties from within component,open
-1184198585,https://api.github.com/repos/sveltejs/svelte,[fix] Max call stack exceeded when large number of components are flushed ,open
-1180787187,https://api.github.com/repos/sveltejs/svelte,select_change_handler fails with exposed slot property,open
-1175275195,https://api.github.com/repos/sveltejs/svelte,camelCased variable names are not reactive.,open
-1174995296,https://api.github.com/repos/sveltejs/svelte,Custom Elements Hydrated Incorrectly,open
-1174626893,https://api.github.com/repos/sveltejs/svelte,Feature Request: Template guard clauses,open
-1174135626,https://api.github.com/repos/sveltejs/svelte,[docs] add component comments,open
-1169185920,https://api.github.com/repos/sveltejs/svelte,One unit test fails with pnpm, works with npm,open
-1168249945,https://api.github.com/repos/sveltejs/svelte,bind:this in each block not working with Array.splice,open
-1167536041,https://api.github.com/repos/sveltejs/svelte,CSS "!important" not supported in Svelte "style",open
-1167428689,https://api.github.com/repos/sveltejs/svelte,[fix] 1.@html in template set inner html, 2. with sibling error closes [#7315, #7319],open
-1167323233,https://api.github.com/repos/sveltejs/svelte,{#each} with immutable values,open
-1167166428,https://api.github.com/repos/sveltejs/svelte,Discrepancy of `<select value>` from `<option selected>`,open
-1165818005,https://api.github.com/repos/sveltejs/svelte,[fix] Export types needed for defining custom stores,open
-1164769953,https://api.github.com/repos/sveltejs/svelte,[docs] Fix statement about the order of bind: and on:,open
 1161311353,https://api.github.com/repos/knockout/knockout,Need to fix Typescript definitions since Typescript 4.6,open
 1137190266,https://api.github.com/repos/knockout/knockout,@types/knockout npm package declared as ambient module instead of exporting namespace,open
 1121018743,https://api.github.com/repos/knockout/knockout,Status of knockout,open
@@ -1016,22 +986,6 @@
 198266719,https://api.github.com/repos/emadalam/atvjs,Remove unwanted dependencies,open
 164028037,https://api.github.com/repos/emadalam/atvjs,feature: resolve parameters in Page.url,open
 131966277,https://api.github.com/repos/emadalam/atvjs,Re-render a template?,open
-1199557651,https://api.github.com/repos/alpinejs/alpine,Fix link in warning,open
-1198570158,https://api.github.com/repos/alpinejs/alpine,Bump moment from 2.29.1 to 2.29.2,open
-1198554293,https://api.github.com/repos/alpinejs/alpine,Transitionend event listener doesn't work on Safari (macOS + iOS),open
-1192967618,https://api.github.com/repos/alpinejs/alpine,Alpine doesn't work for me on IOS (Safari and chrome),open
-1188719755,https://api.github.com/repos/alpinejs/alpine,Inconsistent update with template x-if,open
-1158939061,https://api.github.com/repos/alpinejs/alpine,Documentation for `destroy()` and component cleanup,open
-1124347632,https://api.github.com/repos/alpinejs/alpine,Error with Alpine and Livewire related with x-show,open
-1116851754,https://api.github.com/repos/alpinejs/alpine,Update CSP documentation to clarify availability of the CSP build,open
-1091511336,https://api.github.com/repos/alpinejs/alpine,New event specific for plugin initialization,open
-1089292851,https://api.github.com/repos/alpinejs/alpine,When using browser history, the x-model attribute doesn't keep the state in sync with the input element.,open
-1088635971,https://api.github.com/repos/alpinejs/alpine,Morph - allow for full page morphs,open
-1074191525,https://api.github.com/repos/alpinejs/alpine,Prevent breaking when Alpine is transpiled to ES5 (fixes #2454),open
-1028009666,https://api.github.com/repos/alpinejs/alpine,Add $cookie,open
-1013789711,https://api.github.com/repos/alpinejs/alpine,Fix x-model for csp build,open
-1010006994,https://api.github.com/repos/alpinejs/alpine,Memory and DOM element leaks in magic,open
-923199150,https://api.github.com/repos/alpinejs/alpine,New translation,open
 1144668517,https://api.github.com/repos/infernojs/inferno,Rendering links starting with "javascript:" should log warning,open
 1082445640,https://api.github.com/repos/infernojs/inferno,inferno-mobx observer is incompatible with certain life cycle hooks,open
 1038153498,https://api.github.com/repos/infernojs/inferno,SSR tests are run in JSDOM env and rely on document,open
@@ -1158,7 +1112,6 @@
 1190929234,https://api.github.com/repos/jerosoler/Drawflow,Arrange layout,open
 1185977921,https://api.github.com/repos/jerosoler/Drawflow,connection line leaving their positions (input and output too) while dragging it extremally up or down,open
 1171642360,https://api.github.com/repos/jerosoler/Drawflow,How to use jquery plugins in node templates?,open
-1165989080,https://api.github.com/repos/jerosoler/Drawflow,Add click event for newly added input/output,open
 1161209751,https://api.github.com/repos/jerosoler/Drawflow,[REQUEST] Do a tutorial series on this tool + Create forum,open
 1160680949,https://api.github.com/repos/jerosoler/Drawflow,Collapsible/Expandable Flow,open
 1152994938,https://api.github.com/repos/jerosoler/Drawflow,How to transfer/sync data between nodes,open
@@ -1183,6 +1136,7 @@
 835924101,https://api.github.com/repos/jerosoler/Drawflow,Fix navigaton for <div> with extra style,open
 821581405,https://api.github.com/repos/jerosoler/Drawflow,Grid Snap,open
 774470952,https://api.github.com/repos/jerosoler/Drawflow,Minimap,open
+774469818,https://api.github.com/repos/jerosoler/Drawflow,Group  Node Type,open
 1202232087,https://api.github.com/repos/google/blockly,fix: Fix compilation errors under Closure's strict mode,open
 1202151212,https://api.github.com/repos/google/blockly,Update Blockly Games to use new blockly,open
 1200001226,https://api.github.com/repos/google/blockly,MultilineInput - Not sized properly when workspace is loaded.,open
@@ -1326,66 +1280,7 @@
 137356221,https://api.github.com/repos/jashkenas/underscore,Change to SameValueZero for comparisons,open
 136867893,https://api.github.com/repos/jashkenas/underscore,iterator support for _.toArray,open
 136867624,https://api.github.com/repos/jashkenas/underscore,Make the underscore wrapper iterable,open
-1191963632,https://api.github.com/repos/jashkenas/underscore,Parenthesize mixed expressions of || and &&,open
-1191891844,https://api.github.com/repos/jashkenas/underscore,Sauce Labs tests not kicking off in CI,open
-1160545251,https://api.github.com/repos/jashkenas/underscore,_.max gets incorrect results in extendScript,open
-1154480863,https://api.github.com/repos/jashkenas/underscore,Possibility to update a nested object's property in a non-mutable way,open
-1086318525,https://api.github.com/repos/jashkenas/underscore,Utility functions for prototype-based programming,open
-970898593,https://api.github.com/repos/jashkenas/underscore,Uncaught TypeError: Cannot read property '_' of undefined,open
-802915761,https://api.github.com/repos/jashkenas/underscore,Add dark mode support for homepage,open
-802822211,https://api.github.com/repos/jashkenas/underscore,Functional style,open
-801010256,https://api.github.com/repos/jashkenas/underscore,added remove method (issue #1856),open
-771084691,https://api.github.com/repos/jashkenas/underscore,transition function implemented #2850,open
-733619580,https://api.github.com/repos/jashkenas/underscore,repo fails git fsck,open
-717269340,https://api.github.com/repos/jashkenas/underscore,Compare errors by identity in _.isEqual,open
-709305789,https://api.github.com/repos/jashkenas/underscore,use Buffer.from if available(usually in node.js environments) in _.isEqual,open
-674972498,https://api.github.com/repos/jashkenas/underscore,add _.oneArg (and maybe _.twoArgs and _.limitArgs),open
-629515569,https://api.github.com/repos/jashkenas/underscore,Double chaining leads to a stack overflow,open
-615447743,https://api.github.com/repos/jashkenas/underscore,Add _.toggle/_.transition/_.fsm to underscore,open
-612983683,https://api.github.com/repos/jashkenas/underscore,_.bind nontrivial constructor fix (?),open
-514681156,https://api.github.com/repos/jashkenas/underscore,Wrong value for _.isEqual(0, new Number(Number.MIN_VALUE)),open
-312278088,https://api.github.com/repos/jashkenas/underscore,Add two isType methods, for Promise and Generator,open
-292331947,https://api.github.com/repos/jashkenas/underscore,add _.cloneDeep,open
-241519982,https://api.github.com/repos/jashkenas/underscore,_.max and _.min may behave incorrectly if iteratee returns infinite number,open
-236932603,https://api.github.com/repos/jashkenas/underscore,Add new function findKeys,open
-233948365,https://api.github.com/repos/jashkenas/underscore,New function findKeys proposition,open
-154807847,https://api.github.com/repos/jashkenas/underscore,Optimize "uniq" to be O(n) instead of O(n^2),open
-153257381,https://api.github.com/repos/jashkenas/underscore,[#2286]: Underscore could use a _.propertyResult,open
-137692194,https://api.github.com/repos/jashkenas/underscore,_.eq,open
-137510768,https://api.github.com/repos/jashkenas/underscore,isSafeInteger,open
-137356221,https://api.github.com/repos/jashkenas/underscore,Change to SameValueZero for comparisons,open
-136867893,https://api.github.com/repos/jashkenas/underscore,iterator support for _.toArray,open
-136867624,https://api.github.com/repos/jashkenas/underscore,Make the underscore wrapper iterable,open
-1191963632,https://api.github.com/repos/jashkenas/underscore,Parenthesize mixed expressions of || and &&,open
-1191891844,https://api.github.com/repos/jashkenas/underscore,Sauce Labs tests not kicking off in CI,open
-1160545251,https://api.github.com/repos/jashkenas/underscore,_.max gets incorrect results in extendScript,open
-1154480863,https://api.github.com/repos/jashkenas/underscore,Possibility to update a nested object's property in a non-mutable way,open
-1086318525,https://api.github.com/repos/jashkenas/underscore,Utility functions for prototype-based programming,open
-970898593,https://api.github.com/repos/jashkenas/underscore,Uncaught TypeError: Cannot read property '_' of undefined,open
-802915761,https://api.github.com/repos/jashkenas/underscore,Add dark mode support for homepage,open
-802822211,https://api.github.com/repos/jashkenas/underscore,Functional style,open
-801010256,https://api.github.com/repos/jashkenas/underscore,added remove method (issue #1856),open
-771084691,https://api.github.com/repos/jashkenas/underscore,transition function implemented #2850,open
-733619580,https://api.github.com/repos/jashkenas/underscore,repo fails git fsck,open
-717269340,https://api.github.com/repos/jashkenas/underscore,Compare errors by identity in _.isEqual,open
-709305789,https://api.github.com/repos/jashkenas/underscore,use Buffer.from if available(usually in node.js environments) in _.isEqual,open
-674972498,https://api.github.com/repos/jashkenas/underscore,add _.oneArg (and maybe _.twoArgs and _.limitArgs),open
-629515569,https://api.github.com/repos/jashkenas/underscore,Double chaining leads to a stack overflow,open
-615447743,https://api.github.com/repos/jashkenas/underscore,Add _.toggle/_.transition/_.fsm to underscore,open
-612983683,https://api.github.com/repos/jashkenas/underscore,_.bind nontrivial constructor fix (?),open
-514681156,https://api.github.com/repos/jashkenas/underscore,Wrong value for _.isEqual(0, new Number(Number.MIN_VALUE)),open
-312278088,https://api.github.com/repos/jashkenas/underscore,Add two isType methods, for Promise and Generator,open
-292331947,https://api.github.com/repos/jashkenas/underscore,add _.cloneDeep,open
-241519982,https://api.github.com/repos/jashkenas/underscore,_.max and _.min may behave incorrectly if iteratee returns infinite number,open
-236932603,https://api.github.com/repos/jashkenas/underscore,Add new function findKeys,open
-233948365,https://api.github.com/repos/jashkenas/underscore,New function findKeys proposition,open
-154807847,https://api.github.com/repos/jashkenas/underscore,Optimize "uniq" to be O(n) instead of O(n^2),open
-153257381,https://api.github.com/repos/jashkenas/underscore,[#2286]: Underscore could use a _.propertyResult,open
-137692194,https://api.github.com/repos/jashkenas/underscore,_.eq,open
-137510768,https://api.github.com/repos/jashkenas/underscore,isSafeInteger,open
-137356221,https://api.github.com/repos/jashkenas/underscore,Change to SameValueZero for comparisons,open
-136867893,https://api.github.com/repos/jashkenas/underscore,iterator support for _.toArray,open
-136867624,https://api.github.com/repos/jashkenas/underscore,Make the underscore wrapper iterable,open
+1202548918,https://api.github.com/repos/lodash/lodash,cloneDeepWith stack usage,open
 1202200107,https://api.github.com/repos/lodash/lodash,Fix import statement for non-existent module,open
 1201998036,https://api.github.com/repos/lodash/lodash,Fix syntax error where delete cannot be used in strict mode,open
 1201469724,https://api.github.com/repos/lodash/lodash,_.get accesses properties on prototype chain,open
@@ -1415,7 +1310,6 @@
 1142243594,https://api.github.com/repos/lodash/lodash,Update compact.js for equal sign,open
 1140294854,https://api.github.com/repos/lodash/lodash,lodash set not working,open
 1138540965,https://api.github.com/repos/lodash/lodash,`includes(collection, target)` doesn't throw typescript error when `target` is not part of union type `collection`,open
-1136823106,https://api.github.com/repos/lodash/lodash,lodash.com "follow" has overflow set weirdly,open
 1142816820,https://api.github.com/repos/andrewplummer/Sugar,Date.create can't parse dots in time format,open
 1039606533,https://api.github.com/repos/andrewplummer/Sugar,Reversed fromUTC fallback logic,open
 997744547,https://api.github.com/repos/andrewplummer/Sugar,Problem parsing Spanish DateTime string,open
@@ -1622,8 +1516,6 @@
 393644323,https://api.github.com/repos/cyclejs/cyclejs,Add file upload example and address issue #294 with solution.,open
 387394038,https://api.github.com/repos/cyclejs/cyclejs,Cannot import @cycle/time/rxjs,open
 371108833,https://api.github.com/repos/cyclejs/cyclejs,Docs revamp,open
-1201232070,https://api.github.com/repos/concentjs/concent,二次封装遇到 _IFnCtx 的 cuVal 属性必须使用索引访问,open
-1174533455,https://api.github.com/repos/concentjs/concent,无法与 Next 12.1.0 一起使用,open
 1062194618,https://api.github.com/repos/concentjs/concent,文档字段错误,open
 1041843222,https://api.github.com/repos/concentjs/concent,使用中感到难受疑惑的点,open
 1161767070,https://api.github.com/repos/immutable-js/immutable-js,Example implementations for hashCode() in documentation,open
@@ -1762,7 +1654,6 @@
 27556094,https://api.github.com/repos/rmm5t/jquery-timeago,Changed words var into a table lookup,open
 25765282,https://api.github.com/repos/rmm5t/jquery-timeago,Only days,open
 25036956,https://api.github.com/repos/rmm5t/jquery-timeago,Optionally set a cutoff message.,open
-1144700353,https://api.github.com/repos/matthewmueller/date,How to get start and end date of current month and week?,open
 784548292,https://api.github.com/repos/matthewmueller/date,Unofficial date.js has new v4.0.0 - possible malware,open
 782903735,https://api.github.com/repos/matthewmueller/date,Why are you returning a default date when the supplied input is invalid?,open
 766281042,https://api.github.com/repos/matthewmueller/date,post meridiem is ignored in `"at 3:00 p.m."`, but not in `"at 3:00 pm"`,open
@@ -1792,6 +1683,7 @@
 28293575,https://api.github.com/repos/matthewmueller/date,favour current day (optionally?),open
 26934689,https://api.github.com/repos/matthewmueller/date,same results for "ago" and "from now",open
 25328191,https://api.github.com/repos/matthewmueller/date,Demo clicks broken in FireFox,open
+21214777,https://api.github.com/repos/matthewmueller/date,Fix monthByName,open
 1202105865,https://api.github.com/repos/date-fns/date-fns,Easy way to override just abbreviated month values for a locale?,open
 1200316772,https://api.github.com/repos/date-fns/date-fns,🇹🇯 Tajik (tg) language support,open
 1199541981,https://api.github.com/repos/date-fns/date-fns,Bug with subQuarters,open
@@ -1822,36 +1714,6 @@
 1150865999,https://api.github.com/repos/date-fns/date-fns,Inject in the APP the locale of the database,open
 1146892723,https://api.github.com/repos/date-fns/date-fns,Problem with formatDistanceToNow function in Safari 15.3 on MacOS Monterey 12.2.1,open
 1144913851,https://api.github.com/repos/date-fns/date-fns,formatISO does not support milliseconds,open
-860750887,https://api.github.com/repos/rmm5t/jquery-timeago,How can I add translation for months' names?,open
-744802649,https://api.github.com/repos/rmm5t/jquery-timeago,NaN variable appear after pasing variable to timeago,open
-704872078,https://api.github.com/repos/rmm5t/jquery-timeago,Support multiple locales concurrent,open
-606752976,https://api.github.com/repos/rmm5t/jquery-timeago,Fix #363: Replace jQuery deprecated methods trim and isFunction,open
-604320827,https://api.github.com/repos/rmm5t/jquery-timeago,JQuery Deprecated Methods,open
-512202045,https://api.github.com/repos/rmm5t/jquery-timeago,Add setting to pass options for date.toLocaleString() ,open
-364562757,https://api.github.com/repos/rmm5t/jquery-timeago,substitute function does not work for numbers > 9,open
-351828585,https://api.github.com/repos/rmm5t/jquery-timeago,add 'use strict'; to most files to avoid more warnings,open
-344857549,https://api.github.com/repos/rmm5t/jquery-timeago,Uncaught TypeError: Cannot read property 'replace' of undefined,open
-327802891,https://api.github.com/repos/rmm5t/jquery-timeago,Update jquery.timeago.zh-CN.js,open
-320693864,https://api.github.com/repos/rmm5t/jquery-timeago,Hindi locale,open
-297458795,https://api.github.com/repos/rmm5t/jquery-timeago,Add jquery-timeago dependency to UMD wrappers,open
-183932660,https://api.github.com/repos/rmm5t/jquery-timeago,added "secondaryFuzzing" support, to allow customized post-processing,open
-158381284,https://api.github.com/repos/rmm5t/jquery-timeago,Multiple locale support,open
-119669560,https://api.github.com/repos/rmm5t/jquery-timeago,Prevent multiple initialization,open
-113814824,https://api.github.com/repos/rmm5t/jquery-timeago,Perfomance issue onLoad on "larger" page,open
-111073337,https://api.github.com/repos/rmm5t/jquery-timeago,Performance Issue: setTimeout/setInterval,open
-108144137,https://api.github.com/repos/rmm5t/jquery-timeago,Tense class,open
-79904735,https://api.github.com/repos/rmm5t/jquery-timeago,Add a CSS Class or Style Color to Past DateTime,open
-45755141,https://api.github.com/repos/rmm5t/jquery-timeago,Can't activate timeago on elements prior to inserting them into the DOM,open
-40108362,https://api.github.com/repos/rmm5t/jquery-timeago,Use a single interval for all elements,open
-38734087,https://api.github.com/repos/rmm5t/jquery-timeago,specify locale when calling timeago,open
-35221013,https://api.github.com/repos/rmm5t/jquery-timeago,different setings for different page,open
-31927026,https://api.github.com/repos/rmm5t/jquery-timeago,Make each timeout interval depend on the timestamp itself,open
-29341927,https://api.github.com/repos/rmm5t/jquery-timeago,Enable programmatic locale switching,open
-29325452,https://api.github.com/repos/rmm5t/jquery-timeago,Treat "dates" as dates rather than "midnight",open
-27944667,https://api.github.com/repos/rmm5t/jquery-timeago,Less than a minute from now,open
-27556094,https://api.github.com/repos/rmm5t/jquery-timeago,Changed words var into a table lookup,open
-25765282,https://api.github.com/repos/rmm5t/jquery-timeago,Only days,open
-25036956,https://api.github.com/repos/rmm5t/jquery-timeago,Optionally set a cutoff message.,open
 1202105583,https://api.github.com/repos/iamkun/dayjs,fix 1788- parsing negative Iso for duration correctly,open
 1200267105,https://api.github.com/repos/iamkun/dayjs,Output is NaN for a specific date format,open
 1199615217,https://api.github.com/repos/iamkun/dayjs,ambiguous definition of `isValid()`,open
@@ -1882,6 +1744,7 @@
 1158258536,https://api.github.com/repos/iamkun/dayjs,valueOf offset calculate not correctly, when crossing summertime,open
 1158252566,https://api.github.com/repos/iamkun/dayjs,fix: valueOf not correct when cross summertime,open
 1155765143,https://api.github.com/repos/iamkun/dayjs,`tz()` produces incorrect time when passing in milliseconds since the epoch near DST boundary.,open
+1202586845,https://api.github.com/repos/moment/luxon,Date offset is wrong for negative date,open
 1200823937,https://api.github.com/repos/moment/luxon,Duration `Infinity` is converted to `0` by some methods,open
 1197895365,https://api.github.com/repos/moment/luxon,Bump minimist from 1.2.5 to 1.2.6,open
 1193539852,https://api.github.com/repos/moment/luxon,Add docs section about missing leap second support,open
@@ -1911,67 +1774,6 @@
 1041412195,https://api.github.com/repos/moment/luxon,FixedOffsetZone constructor accepts bad inputs, but `isValid` returns true,open
 1027284493,https://api.github.com/repos/moment/luxon,Luxon does not support U+2010 (HYPHEN) as a date separator in ISO8601 format,open
 1017268397,https://api.github.com/repos/moment/luxon,Convert codebase to TypeScript (continued),open
-1013257977,https://api.github.com/repos/moment/luxon,Release luxon in bower.io,open
 22923962,https://api.github.com/repos/gumroad/countdown.js,Allow user to specify the step interval,open
 21197907,https://api.github.com/repos/gumroad/countdown.js,why not add a param to let it count up ?,open
 19712172,https://api.github.com/repos/gumroad/countdown.js,Support for float as a duration,open
-860750887,https://api.github.com/repos/rmm5t/jquery-timeago,How can I add translation for months' names?,open
-744802649,https://api.github.com/repos/rmm5t/jquery-timeago,NaN variable appear after pasing variable to timeago,open
-704872078,https://api.github.com/repos/rmm5t/jquery-timeago,Support multiple locales concurrent,open
-606752976,https://api.github.com/repos/rmm5t/jquery-timeago,Fix #363: Replace jQuery deprecated methods trim and isFunction,open
-604320827,https://api.github.com/repos/rmm5t/jquery-timeago,JQuery Deprecated Methods,open
-512202045,https://api.github.com/repos/rmm5t/jquery-timeago,Add setting to pass options for date.toLocaleString() ,open
-364562757,https://api.github.com/repos/rmm5t/jquery-timeago,substitute function does not work for numbers > 9,open
-351828585,https://api.github.com/repos/rmm5t/jquery-timeago,add 'use strict'; to most files to avoid more warnings,open
-344857549,https://api.github.com/repos/rmm5t/jquery-timeago,Uncaught TypeError: Cannot read property 'replace' of undefined,open
-327802891,https://api.github.com/repos/rmm5t/jquery-timeago,Update jquery.timeago.zh-CN.js,open
-320693864,https://api.github.com/repos/rmm5t/jquery-timeago,Hindi locale,open
-297458795,https://api.github.com/repos/rmm5t/jquery-timeago,Add jquery-timeago dependency to UMD wrappers,open
-183932660,https://api.github.com/repos/rmm5t/jquery-timeago,added "secondaryFuzzing" support, to allow customized post-processing,open
-158381284,https://api.github.com/repos/rmm5t/jquery-timeago,Multiple locale support,open
-119669560,https://api.github.com/repos/rmm5t/jquery-timeago,Prevent multiple initialization,open
-113814824,https://api.github.com/repos/rmm5t/jquery-timeago,Perfomance issue onLoad on "larger" page,open
-111073337,https://api.github.com/repos/rmm5t/jquery-timeago,Performance Issue: setTimeout/setInterval,open
-108144137,https://api.github.com/repos/rmm5t/jquery-timeago,Tense class,open
-79904735,https://api.github.com/repos/rmm5t/jquery-timeago,Add a CSS Class or Style Color to Past DateTime,open
-45755141,https://api.github.com/repos/rmm5t/jquery-timeago,Can't activate timeago on elements prior to inserting them into the DOM,open
-40108362,https://api.github.com/repos/rmm5t/jquery-timeago,Use a single interval for all elements,open
-38734087,https://api.github.com/repos/rmm5t/jquery-timeago,specify locale when calling timeago,open
-35221013,https://api.github.com/repos/rmm5t/jquery-timeago,different setings for different page,open
-31927026,https://api.github.com/repos/rmm5t/jquery-timeago,Make each timeout interval depend on the timestamp itself,open
-29341927,https://api.github.com/repos/rmm5t/jquery-timeago,Enable programmatic locale switching,open
-29325452,https://api.github.com/repos/rmm5t/jquery-timeago,Treat "dates" as dates rather than "midnight",open
-27944667,https://api.github.com/repos/rmm5t/jquery-timeago,Less than a minute from now,open
-27556094,https://api.github.com/repos/rmm5t/jquery-timeago,Changed words var into a table lookup,open
-25765282,https://api.github.com/repos/rmm5t/jquery-timeago,Only days,open
-25036956,https://api.github.com/repos/rmm5t/jquery-timeago,Optionally set a cutoff message.,open
-1202000581,https://api.github.com/repos/Anduin2017/HowToCook,高级技巧里怎么能少了和面呢?,open
-1199915398,https://api.github.com/repos/Anduin2017/HowToCook,锅包肉的肉片厚度没有准确描述,open
-1199744833,https://api.github.com/repos/Anduin2017/HowToCook,"电饭煲蒸米饭" 中的米量，是不是用g更合适？,open
-1199072105,https://api.github.com/repos/Anduin2017/HowToCook,我不会用GITHUB提交... 提交了5次了都被自动拒绝...,open
-1199071037,https://api.github.com/repos/Anduin2017/HowToCook,新增 牛油火锅底料(重庆)的做法,open
-1198550571,https://api.github.com/repos/Anduin2017/HowToCook,有没有干锅千叶豆腐 客家酿豆腐 鲫鱼豆腐汤 佛跳墙,open
-1198089478,https://api.github.com/repos/Anduin2017/HowToCook,增加对于食用油的种类决策的方法,open
-1195547045,https://api.github.com/repos/Anduin2017/HowToCook,红烧肉不放糖会怎么样？,open
-1195470373,https://api.github.com/repos/Anduin2017/HowToCook,求：玉米排骨汤,open
-1195357508,https://api.github.com/repos/Anduin2017/HowToCook,传统回锅肉要放甜面酱,open
-1194828496,https://api.github.com/repos/Anduin2017/HowToCook,求：蛋黄鸡翅做法,open
-1194558855,https://api.github.com/repos/Anduin2017/HowToCook,概念混淆：腌渍与腌制,open
-1194382411,https://api.github.com/repos/Anduin2017/HowToCook,提拉米苏教程中朗姆酒数值不精准,open
-1194188552,https://api.github.com/repos/Anduin2017/HowToCook,建议增加米、面、面粉选购指南,open
-1193948101,https://api.github.com/repos/Anduin2017/HowToCook,有茄子汤的做法嘛,open
-1193944524,https://api.github.com/repos/Anduin2017/HowToCook,关于辣椒炒xx的一些求助,open
-1193052109,https://api.github.com/repos/Anduin2017/HowToCook,好像没有酸菜鱼,open
-1191975899,https://api.github.com/repos/Anduin2017/HowToCook,常用的调味品推荐,open
-1191742328,https://api.github.com/repos/Anduin2017/HowToCook,可以来一些减脂餐吗？,open
-1187676800,https://api.github.com/repos/Anduin2017/HowToCook,建议增加空气炸锅的各类菜谱制作方式,open
-1187542097,https://api.github.com/repos/Anduin2017/HowToCook,Submit cuisine,open
-1187392802,https://api.github.com/repos/Anduin2017/HowToCook,口水鸡的最后红油调料比例没写呀,open
-1184967306,https://api.github.com/repos/Anduin2017/HowToCook,金针菇豆腐煲,open
-1184088741,https://api.github.com/repos/Anduin2017/HowToCook,原料用量的人数scalar不应该是线性的,open
-1183378112,https://api.github.com/repos/Anduin2017/HowToCook,Update 炒滑蛋.md,open
-1182954399,https://api.github.com/repos/Anduin2017/HowToCook,如何避免菜炒咸了,open
-1182883898,https://api.github.com/repos/Anduin2017/HowToCook,咕噜肉生粉分量不明确,open
-1181473340,https://api.github.com/repos/Anduin2017/HowToCook,你们喜欢甜的西红柿炒鸡蛋还是咸的,open
-1181469374,https://api.github.com/repos/Anduin2017/HowToCook,炒完菜后发现盐多了，或者其他口味重了，那是debug，还是推了重做？,open
-1181460292,https://api.github.com/repos/Anduin2017/HowToCook,你们忘了饥荒了吗？用lua写，配个高级炖锅,open

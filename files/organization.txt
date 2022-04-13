@@ -17,8 +17,6 @@
 1253363,emberjs,Ember.js,,null,2011-12-10T00:25:10Z,2022-04-06T11:27:58Z,null,Organization
 789528,meteor,Meteor,,hello@meteor.com,2011-05-15T18:34:06Z,2022-04-04T20:35:47Z,null,Organization
 4751469,ractivejs,Ractive.js,,null,2013-06-20T17:47:14Z,2018-03-12T03:00:15Z,null,Organization
-6128107,vuejs,vuejs,,null,2013-12-07T06:13:00Z,2022-01-09T08:00:00Z,All Over the World,Organization
-23617963,sveltejs,Svelte,Cybernetically enhanced web apps,null,2016-11-20T18:03:26Z,2022-03-10T15:25:29Z,pkg.devDependencies,Organization
 3863375,knockout,Knockout.js,null,null,2013-03-14T10:55:07Z,2019-08-06T05:48:43Z,null,Organization
 3267164,spine,Spine JS Project,For Spine.js related libraries/tools ,null,2013-01-14T17:06:30Z,2019-05-18T14:47:26Z,null,Organization
 9556861,techlayer,TechLayer,,null,2014-11-04T18:02:25Z,2021-11-19T08:00:27Z,null,Organization

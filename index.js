@@ -151,9 +151,9 @@ const singles = [
 // downloads();
 // downloadsOnDate();
 // issue();
-package();
-ownsRepo();
-inOrg();
+// package();
+// ownsRepo();
+// inOrg();
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -243,7 +243,7 @@ async function package() {
   writeFile("files/hasPackage.txt", hasPackage.join("\n"));
 }
 
-// Issue(issueID, repoID, title, body, state)
+// Issue(issueID, repoURL, title, state)
 async function issue() {
   let db = [];
   for (const [owner, repo] of pairs) {

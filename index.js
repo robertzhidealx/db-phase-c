@@ -165,6 +165,42 @@ const pairs = [
   ["opticdev", "optic"],
   ["vercel", "swr"],
   ["tannerlinsley", "react-query"],
+  ["simplefocus", "FlowType.JS"],
+  ["zachleat", "BigText"],
+  ["peterhry", "circletype"],
+  ["slabText", ""],
+  ["peachananr", "simple-text-rotator"],
+  ["chuckyglitch", "novacancy.js"],
+  ["ghepting", "jquery-responsive-text"],
+  ["davatron5000", "FitText.js"],
+  ["davatron5000", "Lettering.js"],
+  ["julianshapiro", "velocity"],
+  ["rstacruz", "jquery.transit"],
+  ["tictail", "bounce.js"],
+  ["greensock", "GreenSock-JS"],
+  ["EvandroLG", "transitionEnd"],
+  ["michaelvillar", "dynamics.js"],
+  ["pstadler", "the-cube"],
+  ["h5bp", "Effeckt.css"],
+  ["daneden", "animate.css"],
+  ["jschr", "textillate"],
+  ["visionmedia", "move.js"],
+  ["LeaVerou", "animatable"],
+  ["peachananr", "shuffle-images"],
+  ["miguel-perez", "smoothState.js"],
+  ["VincentGarreau", "particles.js"],
+  ["matteobruni", "tsparticles"],
+  ["lindelof", "particles-bg"],
+  ["barbajs", "barba"],
+  ["camwiegert", "typical"],
+  ["lukehoban", "es6features"],
+  ["rse", "es6-features"],
+  ["kangax", "compat-table"],
+  ["babel", "babel"],
+  ["google", "traceur-compiler"],
+  ["davidsonfellipe", "lena.js"],
+  ["nodeca", "pica"],
+  ["fengyuanchen", "cropper"],
 ];
 
 const singles = [
@@ -296,6 +332,42 @@ const singles = [
   "opticdev",
   "vercel",
   "tannerlinsley",
+  "simplefocus",
+  "zachleat",
+  "peterhry",
+  "slabText",
+  "peachananr",
+  "chuckyglitch",
+  "ghepting",
+  "davatron5000",
+  "davatron5000",
+  "julianshapiro",
+  "rstacruz",
+  "tictail",
+  "greensock",
+  "EvandroLG",
+  "michaelvillar",
+  "pstadler",
+  "h5bp",
+  "daneden",
+  "jschr",
+  "visionmedia",
+  "LeaVerou",
+  "peachananr",
+  "miguel-perez",
+  "VincentGarreau",
+  "matteobruni",
+  "lindelof",
+  "barbajs",
+  "camwiegert",
+  "lukehoban",
+  "rse",
+  "kangax",
+  "babel",
+  "google",
+  "davidsonfellipe",
+  "nodeca",
+  "fengyuanchen",
 ];
 
 // organization();
@@ -305,11 +377,7 @@ const singles = [
 //downloads();
 //downloadsOnDate();
 // issue();
-<<<<<<< HEAD
 // package();
-=======
-//package();
->>>>>>> cf519422160161f7ac966280965b4abdb2ddabba
 // ownsRepo();
 // inOrg();
 

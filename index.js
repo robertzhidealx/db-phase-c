@@ -302,10 +302,14 @@ const singles = [
 // repository();
 // commit();
 // commitStats();
-// downloads();
-// downloadsOnDate();
+//downloads();
+//downloadsOnDate();
 // issue();
+<<<<<<< HEAD
 // package();
+=======
+//package();
+>>>>>>> cf519422160161f7ac966280965b4abdb2ddabba
 // ownsRepo();
 // inOrg();
 
@@ -470,8 +474,17 @@ async function commitStats() {
 
 // Downloads(packageName, startDate, endDate, downloadsCount)
 async function downloads() {
+  let package = [];
+  for (const [owner, repo] of pairs) {
+    const { id } = await get(`https://api.github.com/orgs/${owner}`);
+    if (!id) continue;
+    const pkgRes = await get(`https://api.npms.io/v2/package/${repo}`);
+    if (!pkgRes.collected || !pkgRes.collected.metadata) continue;
+    const name = pkgRes.collected.metadata.name;
+    package.push(`${name}`);
+  }
   let db = [];
-  for (const pkg of singles) {
+  for (const pkg of package) {
     const { package, start, end, downloads } = await get(
       `https://api.npmjs.org/downloads/point/2020-07-01:2022-01-01/${pkg}`,
       false
@@ -486,7 +499,16 @@ async function downloads() {
 // DownloadsOnDate(packageName, day, downloads)
 async function downloadsOnDate() {
   let db = [];
-  for (const pkg of singles) {
+  let package = [];
+  for (const [owner, repo] of pairs) {
+    const { id } = await get(`https://api.github.com/orgs/${owner}`);
+    if (!id) continue;
+    const pkgRes = await get(`https://api.npms.io/v2/package/${repo}`);
+    if (!pkgRes.collected || !pkgRes.collected.metadata) continue;
+    const name = pkgRes.collected.metadata.name;
+    package.push(`${name}`);
+  }
+  for (const pkg of package) {
     const { package, downloads: days } = await get(
       `https://api.npmjs.org/downloads/range/2020-10-01:2022-01-01/${pkg}`,
       false

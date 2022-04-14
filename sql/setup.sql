@@ -1,12 +1,16 @@
+DROP TABLE IF EXISTS DownloadsOnDate;
+DROP TABLE IF EXISTS Downloads;
 DROP TABLE IF EXISTS HasPackage;
 DROP TABLE IF EXISTS Package;
+DROP TABLE IF EXISTS OwnsRepo;
+DROP TABLE IF EXISTS InOrg;
 DROP TABLE IF EXISTS Organization;
 DROP TABLE IF EXISTS _User;
-DROP TABLE IF EXISTS Repository;
-DROP TABLE IF EXISTS Downloads;
-DROP TABLE IF EXISTS DownloadsOnDate;
 DROP TABLE IF EXISTS _Commit;
 DROP TABLE IF EXISTS CommitStats;
+DROP TABLE IF EXISTS IssueCreator;
+DROP TABLE IF EXISTS Issue;
+DROP TABLE IF EXISTS Repository;
 
 CREATE TABLE Organization (
   orgID  INT NOT NULL,
@@ -21,7 +25,7 @@ CREATE TABLE Organization (
   PRIMARY KEY(orgID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/organization-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/organization.txt'
 INTO TABLE Organization
 FIELDS TERMINATED BY ',';
 
@@ -34,7 +38,7 @@ CREATE TABLE _User(
   PRIMARY KEY(userID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/user-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/user.txt'
 INTO TABLE _User
 FIELDS TERMINATED BY ',';
 
@@ -47,7 +51,7 @@ CREATE TABLE Package(
   PRIMARY KEY(packageName)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/package-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/package.txt'
 INTO TABLE Package
 FIELDS TERMINATED BY ',';
 
@@ -60,7 +64,7 @@ CREATE TABLE HasPackage(
   FOREIGN KEY(packageName) REFERENCES Package(packageName)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/HasPackage-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/HasPackage.txt'
 INTO TABLE HasPackage
 FIELDS TERMINATED BY ',';
 
@@ -69,7 +73,7 @@ FIELDS TERMINATED BY ',';
 CREATE TABLE Repository(
   repoID INT,
   name varchar(100), 
-  description varchar(100), 
+  description varchar(600), 
   url varchar(100), 
   forksCount INT, 
   stargazersCount INT, 
@@ -78,7 +82,7 @@ CREATE TABLE Repository(
   PRIMARY KEY(repoID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/repository-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/repository.txt'
 INTO TABLE Repository
 FIELDS TERMINATED BY ',';
 
@@ -87,11 +91,12 @@ CREATE TABLE Downloads(
   packageName varchar(100),
   startDate DATE,
   endDate DATE,
-  downloadsCount INT,
-  PRIMARY KEY(packageName)
+  downloadsCount BIGINT,
+  PRIMARY KEY(packageName),
+  FOREIGN KEY(packageName) REFERENCES Package(packageName)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/downloads-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/downloads.txt'
 INTO TABLE Downloads
 FIELDS TERMINATED BY ',';
 
@@ -100,10 +105,11 @@ CREATE TABLE DownloadsOnDate(
   packageName varchar(100),
   _day DATE,
   downloads INT,
-  PRIMARY KEY(packageName,_day,downloads)
+  PRIMARY KEY(packageName,_day,downloads),
+  FOREIGN KEY(packageName) REFERENCES Package(packageName)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/downloadsOnDate-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/downloadsOnDate.txt'
 INTO TABLE DownloadsOnDate
 FIELDS TERMINATED BY ',';
 
@@ -114,15 +120,16 @@ CREATE TABLE _Commit(
   author varchar(200), 
   committer varchar(200), 
   commentCount INT, 
-  isVerified BOOLEAN,
-  PRIMARY KEY(commitID)
+  isVerified varchar(10),
+  PRIMARY KEY(commitID),
+  FOREIGN KEY(repoID) REFERENCES Repository(repoID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/commit-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/commit.txt'
 INTO TABLE _Commit
 FIELDS TERMINATED BY ',';
 
--- CommitStats(commitID, additions, deletions, total) // multivalued attribute of Commit
+-- CommitStats(commitID, additions, deletions, total)
 CREATE TABLE CommitStats(
   commitID varchar(200), 
   additions INT, 
@@ -131,6 +138,58 @@ CREATE TABLE CommitStats(
   PRIMARY KEY(commitID)
 );
 
-LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/commitStats-small.txt'
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/commitStats.txt'
 INTO TABLE CommitStats
+FIELDS TERMINATED BY ',';
+
+-- Issue(issueID, repoID, title, state) 
+CREATE TABLE Issue(
+  issueID INT, 
+  repoURL varchar(500), 
+  title varchar(500), 
+  state varchar(500),
+  PRIMARY KEY(issueID, repoURL)
+);
+
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/issue.txt'
+INTO TABLE Issue
+FIELDS TERMINATED BY ',';
+
+-- IssueCreator(issueID, creatorID, creatorLogin)
+CREATE TABLE IssueCreator(
+  issueID INT,
+  assigneeID INT,
+  assigneeLogin varchar(100),
+  PRIMARY KEY(issueID, assigneeID, assigneeLogin),
+  FOREIGN KEY(issueID) REFERENCES Issue(issueID)
+);
+
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/issueCreator.txt'
+INTO TABLE IssueCreator
+FIELDS TERMINATED BY ',';
+
+-- InOrg(userID, orgID) 
+CREATE TABLE InOrg(
+  userID INT NOT NULL,
+  orgID INT NOT NULL,
+  PRIMARY KEY(userID, orgID),
+  FOREIGN KEY(orgID) REFERENCES Organization(orgID),
+  FOREIGN KEY(userID) REFERENCES _User(userID)
+);
+
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/inOrg.txt'
+INTO TABLE InOrg
+FIELDS TERMINATED BY ',';
+
+-- OwnsRepo(repoID, userID)
+CREATE TABLE OwnsRepo(
+  repoID INT NOT NULL,
+  userID INT NOT NULL,
+  PRIMARY KEY(repoID, userID),
+  FOREIGN KEY(repoID) REFERENCES Repository(repoID),
+  FOREIGN KEY(userID) REFERENCES _User(userID)
+);
+
+LOAD DATA LOCAL INFILE '/Users/jessieluo/Desktop/phase-c/db/ownsRepo.txt'
+INTO TABLE OwnsRepo
 FIELDS TERMINATED BY ',';

@@ -373,9 +373,9 @@ const singles = [
 // organization();
 // repository();
 // commit();
-// commitStats();
-//downloads();
-//downloadsOnDate();
+commitStats();
+// downloads();
+// downloadsOnDate();
 // issue();
 // package();
 // ownsRepo();
@@ -520,10 +520,12 @@ async function commit() {
 // CommitStats(commitID, additions, deletions, total)
 async function commitStats() {
   let db = [];
-  for (const [owner, repo] of pairs) {
+  for (let i = 0; i < 100; i++) {
+    const [owner, repo] = pairs[i];
     const commits = await get(
       `https://api.github.com/repos/${owner}/${repo}/commits`
     );
+    // console.log(commits);
     for (const { sha: commitId } of commits) {
       const { stats: statsObj } = await get(
         `https://api.github.com/repos/${owner}/${repo}/commits/${commitId}`

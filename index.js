@@ -373,7 +373,7 @@ const singles = [
 // organization();
 // repository();
 // commit();
-commitStats();
+// commitStats();
 // downloads();
 // downloadsOnDate();
 // issue();
@@ -520,7 +520,7 @@ async function commit() {
 // CommitStats(commitID, additions, deletions, total)
 async function commitStats() {
   let db = [];
-  for (let i = 0; i < 100; i++) {
+  for (let i = 120; i < 196; i++) {
     const [owner, repo] = pairs[i];
     const commits = await get(
       `https://api.github.com/repos/${owner}/${repo}/commits`
@@ -536,10 +536,16 @@ async function commitStats() {
           statsObj.total
         )}`
       );
+      appendFile(
+        "files/commitStats.txt",
+        `${r(commitId)},${r(statsObj.additions)},${r(statsObj.deletions)},${r(
+          statsObj.total
+        )}\n`
+      );
     }
   }
   db = [...new Set(db)];
-  writeFile("files/commitStats.txt", db.join("\n"));
+  // writeFile("files/commitStats.txt", db.join("\n"));
 }
 
 // Downloads(packageName, startDate, endDate, downloadsCount)
@@ -682,6 +688,8 @@ function appendFile(fileName, content) {
 
 function r(s) {
   if (typeof s !== "string") return s;
-  return s.replace(/[,]|[^a-zA-Z0-9\s(){}|\/\\;.\-_]/g, "");
+  return s
+    .replace(/[,]|[^a-zA-Z0-9\s(){}|\/\\;:.\-_]/g, "")
+    .replace("T", " ")
+    .replace("Z", "");
 }
-// console.log("!?.，".replace(/[,]|[^a-zA-Z0-9\s(){}|\/\\;.\-_?!]/g, ""));

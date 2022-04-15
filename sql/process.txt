@@ -1,0 +1,174 @@
+[ Partners ]
+
+- Jiaxuan Zhang, jzhan239
+- Jessie Luo, jluo30
+
+[ IMPORTANT ]
+
+Our submission’s file structure is as follows:
+
+- db folder folder: containing all the complete .txt files
+- db_small folder: containing all the small versions of the .txt files
+- cleanup.sql
+- setup.sql
+- setup-small.sql
+
+When running the setup scripts, please make sure to keep the structure as mentioned above since the setup sql script would load data from .txt files based on their relative path to the setup sql script. E.g., setup.sql would load data from the repository.txt file in the db folder via ‘./db/repository.txt’.
+
+[ The Process ]
+
+We created a GitHub repo that contains our code used to fetch and clean data: [https://github.com/robertzhidealx/db-phase-c](https://github.com/robertzhidealx/db-phase-c).
+
+We split our files according to each entity and relation:
+
+- commitStats:
+    
+    URL: [https://docs.github.com/en/rest/reference/commits](https://docs.github.com/en/rest/reference/commits)
+    
+    API 1:  [https://api.github.com/repos/${owner}/${repo}/commits](https://api.github.com/repos/$%7Bowner%7D/$%7Brepo%7D/commits), returns an array of object
+    
+    For each object in the array
+    
+    1. fetch data field “sha”
+    2. call API 2: [https://api.github.com/repos/${owner}/${repo}/commits/${sha}](https://api.github.com/repos/$%7Bowner%7D/$%7Brepo%7D/commits/$%7BcommitId%7D), return a object
+    3. name the returned object statsObj
+    4. store data: sha, statsObj.additions, statsObj.deletions, statsObj.total
+    
+    Data format: strings
+    
+- hasPackage:
+    
+    API 1: [https://api.github.com/orgs/${owner}](https://api.github.com/orgs/$%7Bowner%7D) to get user id
+    
+    API 2: [https://api.npms.io/v2/package/${repo}](https://api.npms.io/v2/package/$%7Brepo%7D) to get package name
+    
+    Data format: strings
+    
+- issueCreator:
+    
+    API: [https://api.github.com/repos/${owner}/${repo}/issues](https://api.github.com/repos/$%7Bowner%7D/$%7Brepo%7D/issues), returns an array of object
+    
+    For each object in the array
+    
+    Fetch data: id, user.login, user.id
+    
+    Data format: strings
+    
+- organization
+    
+    URL: [https://docs.github.com/en/rest/reference/orgs](https://docs.github.com/en/rest/reference/orgs)
+    
+    API: [https://api.github.com/orgs/${org}](https://api.github.com/orgs/$%7Borg%7D), returns a object
+    
+    Fetch data from object: id, login, name, description, email, created_at, updated_at, location, type
+    
+    Data format: strings
+    
+- package:
+    
+    URL: [https://docs.github.com/en/rest/reference/packages](https://docs.github.com/en/rest/reference/packages)
+    
+    API: [https://api.npms.io/v2/package/${repo}](https://api.npms.io/v2/package/$%7Brepo%7D), returns a object
+    
+    fetch data:
+    
+    name the object returned as “[pkgRes](http://pkgres.collected.metadata.name/)”
+    
+    const name = [pkgRes.collected.metadata.name](http://pkgres.collected.metadata.name/);
+    const version = pkgRes.collected.metadata.version;
+    const star = pkgRes.collected.npm.starsCount;
+    const score = pkgRes.score.final;
+    
+    Data format: strings
+    
+- user:
+    
+    URL: [https://docs.github.com/en/rest/reference/users](https://docs.github.com/en/rest/reference/users)
+    
+    API: [https://api.github.com/users/${owner}](https://api.github.com/users/$%7Bowner%7D), returns a object
+    
+    Fetch data from object: id, login, url, type
+    
+    Data format: strings
+    
+- commit:
+    
+    URL: [https://docs.github.com/en/rest/reference/commits](https://docs.github.com/en/rest/reference/commits)
+    
+    API 1: [https://api.github.com/repos/${owner}/${repo}/commits](https://api.github.com/repos/$%7Bowner%7D/$%7Brepo%7D/commits), returns an array of object
+    
+    Fetch data: for each object in the array,
+    
+    sha, author, commit.committer.name, commit.comment_count, commit.verification.verified
+    
+    Fetch data: id
+    
+    Data format: strings
+    
+- downloads:
+    
+    URL: [https://github.com/npm/registry/blob/master/docs/download-counts.md](https://github.com/npm/registry/blob/master/docs/download-counts.md)
+    
+    API: [https://api.npmjs.org/downloads/point/${duration}/${pkg}](https://api.npmjs.org/downloads/point/2020-07-01:2022-01-01/$%7Bpkg%7D), returns a object
+    
+    Fetch data from object: package, start, end, downloads
+    
+    Data format: strings except downloads(int)
+    
+- downloadsOnDate:
+    
+    URL: [https://github.com/npm/registry/blob/master/docs/download-counts.md](https://github.com/npm/registry/blob/master/docs/download-counts.md)
+    
+    API: [https://api.npmjs.org/downloads/range/](https://api.npmjs.org/downloads/range/2020-10-01:2022-01-01/$%7Bpkg%7D)[${duration}](https://api.npmjs.org/downloads/point/2020-07-01:2022-01-01/$%7Bpkg%7D)[/${pkg}](https://api.npmjs.org/downloads/range/2020-10-01:2022-01-01/$%7Bpkg%7D), returns a object
+    
+    Fetch data from object: package, downloads
+    
+    Data format: package(type), downloads(array of {day(string), downloads(int)})
+    
+    iterate through array “downloads” to fetch downloads(int) for each day(string)
+    
+- issue:
+    
+    URL: [https://docs.github.com/en/rest/reference/issues](https://docs.github.com/en/rest/reference/issues)
+    
+    API: [https://api.github.com/repos/${owner}/${repo}/issues](https://api.github.com/repos/$%7Bowner%7D/$%7Brepo%7D/issues), returns a object
+    
+    Fetch data from object: id, repository_url, title, state
+    
+    Data format: strings
+    
+- ownsRepo
+    
+    URL 1: [https://docs.github.com/en/rest/reference/users](https://docs.github.com/en/rest/reference/users)
+    
+    URL 2: [https://docs.github.com/en/rest/reference/](https://docs.github.com/en/rest/reference/users)repos
+    
+    API 1: [https://api.github.com/repos/${owner}/${repo}](https://api.github.com/repos/$%7Bowner%7D/$%7Brepo%7D), returns a object
+    
+    Fetch data: id (repoID)
+    
+    API 2: [https://api.github.com/users/${owner}](https://api.github.com/users/$%7Bowner%7D), returns a object
+    
+    Fetch data: id (userID)
+    
+- repository:
+    
+    URL: [https://docs.github.com/en/rest/reference/repos](https://docs.github.com/en/rest/reference/repos)
+    
+    API: [https://api.github.com/repos/${owner}/${repo}](https://api.github.com/repos/$%7Bowner%7D/$%7Brepo%7D), returns a object
+    
+    Fetch data: id, name, description, url, forks_count, stargazers_count, watchers_count, open_issues_count,
+    
+    Data format: strings
+    
+- InOrg(userID, orgID)
+    
+    URL: [https://docs.github.com/en/rest/reference/orgs](https://docs.github.com/en/rest/reference/orgs)
+    
+    API to fetch organization: [https://api.github.com/orgs/${owner}](https://api.github.com/orgs/$%7Bowner%7D), returns a object
+    
+    Fetch data from object: id(orgID)
+    
+    API to fetch user in each organization: [https://api.github.com/orgs/${owner}/members](https://api.github.com/orgs/$%7Bowner%7D/members), returns an array of object
+    
+    Fetch data: for each object in the array, get field “id” (userID)

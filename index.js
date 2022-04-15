@@ -1,4 +1,5 @@
 const fs = require("fs");
+const readline = require("readline");
 require("dotenv").config();
 
 const token = process.env.TOKEN;
@@ -380,6 +381,13 @@ const singles = [
 // package();
 // ownsRepo();
 // inOrg();
+// dedupCommitStats();
+
+async function dedupCommitStats() {
+  let lines = await readFile();
+  lines = [...new Set(lines)];
+  writeFile("./files/commitStats.txt", lines.join("\n"));
+}
 
 // Organization(orgID, login, name, description, email, location, type, createdAt, updatedAt)
 async function organization() {
@@ -684,6 +692,19 @@ function appendFile(fileName, content) {
       return;
     }
   });
+}
+
+async function readFile() {
+  const fileStream = fs.createReadStream("./files/commitStats.txt");
+  const rl = readline.createInterface({
+    input: fileStream,
+    crlfDelay: Infinity,
+  });
+  const res = [];
+  for await (const line of rl) {
+    res.push(line);
+  }
+  return res;
 }
 
 function r(s) {
